@@ -1,0 +1,6 @@
+framework module Pods_XBookTests {
+  umbrella header "Pods-XBookTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
