@@ -7,6 +7,8 @@ target 'XBook' do
 
   # Pods for XBook
 	pod 'LeanCloud'
+	pod 'JVFloatLabeledTextField'
+
 
   target 'XBookTests' do
     inherit! :search_paths

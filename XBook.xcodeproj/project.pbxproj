@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		20B9C6A100C7B43D7C17DB6D /* Pods_XBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB8173439442DFC7BEF49658 /* Pods_XBook.framework */; };
+		441C717E1FDF864900D0A39B /* PushNewBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441C717D1FDF864900D0A39B /* PushNewBookViewController.swift */; };
+		441C71811FDFA95D00D0A39B /* GeneralFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441C71801FDFA95D00D0A39B /* GeneralFactory.swift */; };
+		443E4E611FECEEEB009A8EF7 /* JVFloatLabeledTextField.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 443E4E621FECEEEB009A8EF7 /* JVFloatLabeledTextField.framework */; };
+		443E4E641FECEF0B009A8EF7 /* BookTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443E4E631FECEF0B009A8EF7 /* BookTitleView.swift */; };
 		445447491FDE172900F4EDF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445447481FDE172900F4EDF7 /* AppDelegate.swift */; };
 		445447501FDE172900F4EDF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4454474F1FDE172900F4EDF7 /* Assets.xcassets */; };
 		445447531FDE172900F4EDF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 445447511FDE172900F4EDF7 /* LaunchScreen.storyboard */; };
@@ -44,6 +48,10 @@
 		0F4D84529C1B7524296C9726 /* Pods-XBookTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XBookTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XBookTests/Pods-XBookTests.debug.xcconfig"; sourceTree = "<group>"; };
 		31A47BB9790E706FA57AD80F /* Pods-XBookUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XBookUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-XBookUITests/Pods-XBookUITests.release.xcconfig"; sourceTree = "<group>"; };
 		3EC4A22940751A45D2E12A47 /* Pods-XBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XBook.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XBook/Pods-XBook.debug.xcconfig"; sourceTree = "<group>"; };
+		441C717D1FDF864900D0A39B /* PushNewBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNewBookViewController.swift; sourceTree = "<group>"; };
+		441C71801FDFA95D00D0A39B /* GeneralFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralFactory.swift; sourceTree = "<group>"; };
+		443E4E621FECEEEB009A8EF7 /* JVFloatLabeledTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = JVFloatLabeledTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		443E4E631FECEF0B009A8EF7 /* BookTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTitleView.swift; sourceTree = "<group>"; };
 		445447451FDE172900F4EDF7 /* XBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		445447481FDE172900F4EDF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4454474F1FDE172900F4EDF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -74,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				443E4E611FECEEEB009A8EF7 /* JVFloatLabeledTextField.framework in Frameworks */,
 				20B9C6A100C7B43D7C17DB6D /* Pods_XBook.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -110,6 +119,22 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		441C717F1FDFA93500D0A39B /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				441C71801FDFA95D00D0A39B /* GeneralFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		441C71821FDFAC1800D0A39B /* PushNewBook */ = {
+			isa = PBXGroup;
+			children = (
+				441C717D1FDF864900D0A39B /* PushNewBookViewController.swift */,
+			);
+			path = PushNewBook;
+			sourceTree = "<group>";
+		};
 		4454473C1FDE172900F4EDF7 = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +160,8 @@
 		445447471FDE172900F4EDF7 /* XBook */ = {
 			isa = PBXGroup;
 			children = (
+				441C71821FDFAC1800D0A39B /* PushNewBook */,
+				441C717F1FDFA93500D0A39B /* Factory */,
 				4454477F1FDE438100F4EDF7 /* More */,
 				4454477E1FDE437300F4EDF7 /* Circle */,
 				4454477D1FDE436D00F4EDF7 /* Push */,
@@ -219,7 +246,7 @@
 		445447911FDEBE9800F4EDF7 /* V */ = {
 			isa = PBXGroup;
 			children = (
-				445447841FDE43D700F4EDF7 /* PushViewController.swift */,
+				443E4E631FECEF0B009A8EF7 /* BookTitleView.swift */,
 			);
 			path = V;
 			sourceTree = "<group>";
@@ -227,6 +254,7 @@
 		445447921FDEBE9F00F4EDF7 /* C */ = {
 			isa = PBXGroup;
 			children = (
+				445447841FDE43D700F4EDF7 /* PushViewController.swift */,
 			);
 			path = C;
 			sourceTree = "<group>";
@@ -234,6 +262,7 @@
 		9187DD67292D6A6CFB7697A7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				443E4E621FECEEEB009A8EF7 /* JVFloatLabeledTextField.framework */,
 				BB8173439442DFC7BEF49658 /* Pods_XBook.framework */,
 				52F08C5657026FB9F0F668D1 /* Pods_XBookTests.framework */,
 				A585F5632A05B26A2D48FB19 /* Pods_XBookUITests.framework */,
@@ -438,11 +467,13 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-XBook/Pods-XBook-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/JVFloatLabeledTextField/JVFloatLabeledTextField.framework",
 				"${BUILT_PRODUCTS_DIR}/LeanCloud/LeanCloud.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JVFloatLabeledTextField.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LeanCloud.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -535,12 +566,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				441C71811FDFA95D00D0A39B /* GeneralFactory.swift in Sources */,
 				445447891FDE49C500F4EDF7 /* MoreViewController.swift in Sources */,
+				443E4E641FECEF0B009A8EF7 /* BookTitleView.swift in Sources */,
 				4454477A1FDE1F4500F4EDF7 /* config.swift in Sources */,
 				445447491FDE172900F4EDF7 /* AppDelegate.swift in Sources */,
 				445447871FDE49BC00F4EDF7 /* CircleViewController.swift in Sources */,
 				445447831FDE43CB00F4EDF7 /* SearchViewController.swift in Sources */,
 				445447851FDE43D700F4EDF7 /* PushViewController.swift in Sources */,
+				441C717E1FDF864900D0A39B /* PushNewBookViewController.swift in Sources */,
 				445447811FDE43AF00F4EDF7 /* RankViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

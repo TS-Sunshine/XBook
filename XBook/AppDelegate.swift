@@ -22,8 +22,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let mainTabBar = UITabBarController()
         //创建主窗口
         self.window = UIWindow(frame:UIScreen.main.bounds)
-        //设置主窗口颜色
-        self.window?.backgroundColor = UIColor.white
         //创建各个控制器
         let rankViewController = UINavigationController.init(rootViewController: RankViewController())
         let seachViewController = UINavigationController.init(rootViewController: SearchViewController())
