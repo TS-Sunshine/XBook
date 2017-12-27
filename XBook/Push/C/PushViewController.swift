@@ -13,6 +13,8 @@ class PushViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.white
+        self.navigationController?.title = "新建书评"
+        
         self.setNavigationBar()
         // Do any additional setup after loading the view.
     }
@@ -22,7 +24,8 @@ class PushViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    //
+    
+    /// 新建书评
     func setNavigationBar(){
         //创建navigationbar
         let navigationView = UIView(frame:CGRect(x:0,y:-20,width:SCREEN_WIDTH,height:64))
