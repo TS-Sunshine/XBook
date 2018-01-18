@@ -9,9 +9,8 @@
 
 import UIKit
 import JVFloatLabeledTextField
-
 @objc protocol BookTitleDelegate {
-    @objc optional func choiceCover()
+    @objc func choiceCover()
 }
 class BookTitleView: UIView  {
     
@@ -24,18 +23,23 @@ class BookTitleView: UIView  {
     /// 作者名
     var bookEditor:JVFloatLabeledTextField?
     
-    override init(frame: CGRect) {
+    var delegate : BookTitleDelegate?
+    
+    
+    override init(frame:CGRect){
         super.init(frame: frame)
-        self.bookCover = UIButton(frame: CGRect(x: 10, y: 8, width: 110, height: 140))
-        self.bookCover?.setImage(UIImage.init(named: "Cover"), for: .normal)
-        self .addSubview(self.bookCover!)
-        self.bookCover?.addTarget(self, action: #selector(choiceCover), for: .touchUpInside)
         
-        self.bookName = JVFloatLabeledTextField(frame: CGRect(x: 128, y: 8 + 40, width: SCREEN_WIDTH - 128 - 15, height: 30))
-        self.bookEditor = JVFloatLabeledTextField(frame: CGRect(x: 128, y: 8 + 70, width: SCREEN_WIDTH - 128 - 15, height: 30))
+        self.bookCover = UIButton(frame: CGRect(x: 10, y: 8, width: 110, height: 141))
+        self.bookCover?.setImage(UIImage(named:"Cover"), for: .normal)
+        self.addSubview(self.bookCover!)
+        self.bookCover?.addTarget(self, action:#selector(choiceCover), for: .touchUpInside)
+        
+        self.bookName = JVFloatLabeledTextField(frame: CGRect(x: 128, y: 8+40, width: SCREEN_WIDTH-128-15, height: 30))
+        self.bookEditor = JVFloatLabeledTextField(frame: CGRect(x: 128, y: 8+70+40, width: SCREEN_WIDTH-128-15, height: 30))
         
         self.bookName?.placeholder = "书名"
         self.bookEditor?.placeholder = "作者"
+        
         
         self.addSubview(self.bookName!)
         self.addSubview(self.bookEditor!)
@@ -47,7 +51,7 @@ class BookTitleView: UIView  {
     
     /// 选择封面
     @objc func choiceCover() {
-        print("2222")
+       self.delegate?.choiceCover()
     }
     
 
