@@ -8,6 +8,7 @@ target 'XBook' do
   # Pods for XBook
 	pod 'LeanCloud'
 	pod 'JVFloatLabeledTextField'
+	pod 'SnapKit'
 
 
   target 'XBookTests' do

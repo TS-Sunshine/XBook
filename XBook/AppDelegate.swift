@@ -8,6 +8,7 @@
 
 import UIKit
 import LeanCloud
+import SnapKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

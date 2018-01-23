@@ -8,8 +8,8 @@
 
 import UIKit
 
-class PushNewBookViewController: UIViewController,PhotoPickerDelegate {
- 
+class PushNewBookViewController: UIViewController {
+    
     
     /// 发布书评头视图
     var bookTitle:BookTitleView?
@@ -23,18 +23,15 @@ class PushNewBookViewController: UIViewController,PhotoPickerDelegate {
         self.bookTitle?.delegate = self
         self.view.addSubview(self.bookTitle!)
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-  
     
-    func getImageFromPicker(image: UIImage) {
-        
-        
-    }
+    
+  
     
     /// 关闭页面
     @objc func close(){
@@ -42,17 +39,28 @@ class PushNewBookViewController: UIViewController,PhotoPickerDelegate {
             
         }
     }
-    func sure() {
-        
+    @objc func sure() {
+        print("确认")
     }
-
+    
 }
 
+// MARK: - 实现BookTitleDelegate代理方法
 extension PushNewBookViewController:BookTitleDelegate {
-    
     func choiceCover() {
         let vc = PhotoPickerViewController()
         vc.delegate = self
         self.present(vc, animated: true, completion: nil)
     }
 }
+
+
+// MARK: - 实现PhotoPickerDelegate代理方法
+extension PushNewBookViewController:PhotoPickerDelegate {
+    func getImageFromPicker(image: UIImage) {
+        self.bookTitle?.bookCover?.setImage(image, for: .normal)
+    }
+    
+    
+}
+
