@@ -76,7 +76,7 @@ class PhotoPickerViewController: UIViewController,UIImagePickerControllerDelegat
             })
             
         }else{
-            let alertView = UIAlertController(title: "此机型无相机", message: nil, preferredStyle: .alert)
+            let alertView = UIAlertController(title: "没有📷拍个屁", message: nil, preferredStyle: .alert)
             alertView.addAction(UIAlertAction(title: "关闭", style: .cancel, handler: { (UIAlertAction) in
                 self.dismiss(animated: true, completion: { 
                     

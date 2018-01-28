@@ -31,7 +31,7 @@ class PushNewBookViewController: UIViewController {
     
     
     
-  
+    
     
     /// 关闭页面
     @objc func close(){
@@ -58,9 +58,40 @@ extension PushNewBookViewController:BookTitleDelegate {
 // MARK: - 实现PhotoPickerDelegate代理方法
 extension PushNewBookViewController:PhotoPickerDelegate {
     func getImageFromPicker(image: UIImage) {
-        self.bookTitle?.bookCover?.setImage(image, for: .normal)
+        let imageSize:CGRect = CGRect(x: 0, y: 100, width: SCREEN_WIDTH, height: SCREEN_WIDTH * 1.273)
+        let CroVC = VPImageCropperViewController(image: image, cropFrame:imageSize , limitScaleRatio: 3)
+        CroVC?.delegate = self
+        self.present(CroVC!, animated: true, completion: nil)
     }
     
     
 }
+
+
+// MARK: - 实现VPImageCropperDelegate的代理方法
+extension PushNewBookViewController:VPImageCropperDelegate {
+    
+    
+    /// 完成的方法
+    ///
+    /// - Parameters:
+    ///   - cropperViewController: <#cropperViewController description#>
+    ///   - editedImage: <#editedImage description#>
+    func imageCropper(_ cropperViewController: VPImageCropperViewController!, didFinished editedImage: UIImage!) {
+        self.bookTitle?.bookCover?.setImage(editedImage, for: .normal)
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    /// 取消的方法
+    ///
+    /// - Parameter cropperViewController: <#cropperViewController description#>
+    func imageCropperDidCancel(_ cropperViewController: VPImageCropperViewController!) {
+        
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    
+}
+
+
 

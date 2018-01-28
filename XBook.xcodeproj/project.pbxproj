@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		20B9C6A100C7B43D7C17DB6D /* Pods_XBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB8173439442DFC7BEF49658 /* Pods_XBook.framework */; };
+		4400A80F2017596600FB6A88 /* VPImageCropperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4400A80D2017596600FB6A88 /* VPImageCropperViewController.m */; };
 		441C717E1FDF864900D0A39B /* PushNewBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441C717D1FDF864900D0A39B /* PushNewBookViewController.swift */; };
 		441C71811FDFA95D00D0A39B /* GeneralFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441C71801FDFA95D00D0A39B /* GeneralFactory.swift */; };
 		443E4E611FECEEEB009A8EF7 /* JVFloatLabeledTextField.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 443E4E621FECEEEB009A8EF7 /* JVFloatLabeledTextField.framework */; };
@@ -62,6 +63,8 @@
 		0F4D84529C1B7524296C9726 /* Pods-XBookTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XBookTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XBookTests/Pods-XBookTests.debug.xcconfig"; sourceTree = "<group>"; };
 		31A47BB9790E706FA57AD80F /* Pods-XBookUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XBookUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-XBookUITests/Pods-XBookUITests.release.xcconfig"; sourceTree = "<group>"; };
 		3EC4A22940751A45D2E12A47 /* Pods-XBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XBook.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XBook/Pods-XBook.debug.xcconfig"; sourceTree = "<group>"; };
+		4400A80D2017596600FB6A88 /* VPImageCropperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPImageCropperViewController.m; sourceTree = "<group>"; };
+		4400A80E2017596600FB6A88 /* VPImageCropperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPImageCropperViewController.h; sourceTree = "<group>"; };
 		441435882011BE3800AC9D40 /* XBook-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XBook-Bridging-Header.h"; sourceTree = "<group>"; };
 		441C717D1FDF864900D0A39B /* PushNewBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNewBookViewController.swift; sourceTree = "<group>"; };
 		441C71801FDFA95D00D0A39B /* GeneralFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralFactory.swift; sourceTree = "<group>"; };
@@ -146,6 +149,23 @@
 				31A47BB9790E706FA57AD80F /* Pods-XBookUITests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		4400A80B2017594500FB6A88 /* ThirdKit */ = {
+			isa = PBXGroup;
+			children = (
+				4400A80C2017596600FB6A88 /* VPImageCropper */,
+			);
+			path = ThirdKit;
+			sourceTree = "<group>";
+		};
+		4400A80C2017596600FB6A88 /* VPImageCropper */ = {
+			isa = PBXGroup;
+			children = (
+				4400A80D2017596600FB6A88 /* VPImageCropperViewController.m */,
+				4400A80E2017596600FB6A88 /* VPImageCropperViewController.h */,
+			);
+			path = VPImageCropper;
 			sourceTree = "<group>";
 		};
 		441C717F1FDFA93500D0A39B /* Factory */ = {
@@ -235,6 +255,7 @@
 		445447471FDE172900F4EDF7 /* XBook */ = {
 			isa = PBXGroup;
 			children = (
+				4400A80B2017594500FB6A88 /* ThirdKit */,
 				443E669F1FF39AA800BE8420 /* Image */,
 				441C71821FDFAC1800D0A39B /* PushNewBook */,
 				441C717F1FDFA93500D0A39B /* Factory */,
@@ -666,6 +687,7 @@
 				445447871FDE49BC00F4EDF7 /* CircleViewController.swift in Sources */,
 				445447831FDE43CB00F4EDF7 /* SearchViewController.swift in Sources */,
 				445447851FDE43D700F4EDF7 /* PushViewController.swift in Sources */,
+				4400A80F2017596600FB6A88 /* VPImageCropperViewController.m in Sources */,
 				44D49D342010A08900CA5061 /* PhotoPickerViewController.swift in Sources */,
 				441C717E1FDF864900D0A39B /* PushNewBookViewController.swift in Sources */,
 				445447811FDE43AF00F4EDF7 /* RankViewController.swift in Sources */,
@@ -838,6 +860,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
 			};
 			name = Debug;
 		};
@@ -856,6 +879,7 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "XBook/XBook-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
 			};
 			name = Release;
 		};
