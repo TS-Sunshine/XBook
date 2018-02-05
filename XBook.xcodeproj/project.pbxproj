@@ -38,6 +38,12 @@
 		445447871FDE49BC00F4EDF7 /* CircleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445447861FDE49BC00F4EDF7 /* CircleViewController.swift */; };
 		445447891FDE49C500F4EDF7 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445447881FDE49C500F4EDF7 /* MoreViewController.swift */; };
 		44D49D342010A08900CA5061 /* PhotoPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D49D332010A08900CA5061 /* PhotoPickerViewController.swift */; };
+		44E5F651202839FA00B6A306 /* PushSelectTitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E5F650202839FA00B6A306 /* PushSelectTitleViewController.swift */; };
+		44E5F65520283A2600B6A306 /* PushSelectTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E5F65420283A2600B6A306 /* PushSelectTypeViewController.swift */; };
+		44E5F65720283A4000B6A306 /* PushSelectDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E5F65620283A4000B6A306 /* PushSelectDescriptionViewController.swift */; };
+		44E5F65D2028710B00B6A306 /* LDXScore.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E5F6592028710B00B6A306 /* LDXScore.m */; };
+		44E5F65E2028710B00B6A306 /* btn_star_evaluation_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 44E5F65B2028710B00B6A306 /* btn_star_evaluation_normal.png */; };
+		44E5F65F2028710B00B6A306 /* btn_star_evaluation_press.png in Resources */ = {isa = PBXBuildFile; fileRef = 44E5F65C2028710B00B6A306 /* btn_star_evaluation_press.png */; };
 		E5F6428D0E56C2DE17DAAD52 /* Pods_XBookTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52F08C5657026FB9F0F668D1 /* Pods_XBookTests.framework */; };
 		EED50C49634DA2EF2C75B891 /* Pods_XBookUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A585F5632A05B26A2D48FB19 /* Pods_XBookUITests.framework */; };
 /* End PBXBuildFile section */
@@ -101,6 +107,13 @@
 		445447861FDE49BC00F4EDF7 /* CircleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleViewController.swift; sourceTree = "<group>"; };
 		445447881FDE49C500F4EDF7 /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
 		44D49D332010A08900CA5061 /* PhotoPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoPickerViewController.swift; sourceTree = "<group>"; };
+		44E5F650202839FA00B6A306 /* PushSelectTitleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushSelectTitleViewController.swift; sourceTree = "<group>"; };
+		44E5F65420283A2600B6A306 /* PushSelectTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushSelectTypeViewController.swift; sourceTree = "<group>"; };
+		44E5F65620283A4000B6A306 /* PushSelectDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushSelectDescriptionViewController.swift; sourceTree = "<group>"; };
+		44E5F6592028710B00B6A306 /* LDXScore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDXScore.m; sourceTree = "<group>"; };
+		44E5F65A2028710B00B6A306 /* LDXScore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDXScore.h; sourceTree = "<group>"; };
+		44E5F65B2028710B00B6A306 /* btn_star_evaluation_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_star_evaluation_normal.png; sourceTree = "<group>"; };
+		44E5F65C2028710B00B6A306 /* btn_star_evaluation_press.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_star_evaluation_press.png; sourceTree = "<group>"; };
 		52F08C5657026FB9F0F668D1 /* Pods_XBookTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XBookTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		66B4FDC194A3E29395F95D2C /* Pods-XBookUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XBookUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XBookUITests/Pods-XBookUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8A8BFFB2532741976399421E /* Pods-XBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XBook.release.xcconfig"; path = "Pods/Target Support Files/Pods-XBook/Pods-XBook.release.xcconfig"; sourceTree = "<group>"; };
@@ -154,6 +167,7 @@
 		4400A80B2017594500FB6A88 /* ThirdKit */ = {
 			isa = PBXGroup;
 			children = (
+				44E5F6582028710B00B6A306 /* LDXScore */,
 				4400A80C2017596600FB6A88 /* VPImageCropper */,
 			);
 			path = ThirdKit;
@@ -205,6 +219,9 @@
 			isa = PBXGroup;
 			children = (
 				441C717D1FDF864900D0A39B /* PushNewBookViewController.swift */,
+				44E5F65420283A2600B6A306 /* PushSelectTypeViewController.swift */,
+				44E5F65620283A4000B6A306 /* PushSelectDescriptionViewController.swift */,
+				44E5F650202839FA00B6A306 /* PushSelectTitleViewController.swift */,
 				44D49D332010A08900CA5061 /* PhotoPickerViewController.swift */,
 			);
 			path = C;
@@ -356,6 +373,17 @@
 			path = C;
 			sourceTree = "<group>";
 		};
+		44E5F6582028710B00B6A306 /* LDXScore */ = {
+			isa = PBXGroup;
+			children = (
+				44E5F6592028710B00B6A306 /* LDXScore.m */,
+				44E5F65A2028710B00B6A306 /* LDXScore.h */,
+				44E5F65B2028710B00B6A306 /* btn_star_evaluation_normal.png */,
+				44E5F65C2028710B00B6A306 /* btn_star_evaluation_press.png */,
+			);
+			path = LDXScore;
+			sourceTree = "<group>";
+		};
 		9187DD67292D6A6CFB7697A7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -490,6 +518,7 @@
 				443E66B41FF39AA800BE8420 /* Blank2.png in Resources */,
 				443E66B21FF39AA800BE8420 /* logn.png in Resources */,
 				443E66B61FF39AA800BE8420 /* page4.png in Resources */,
+				44E5F65F2028710B00B6A306 /* btn_star_evaluation_press.png in Resources */,
 				443E66B81FF39AA800BE8420 /* page3.png in Resources */,
 				445447501FDE172900F4EDF7 /* Assets.xcassets in Resources */,
 				443E66AD1FF39AA800BE8420 /* red_point.png in Resources */,
@@ -497,6 +526,7 @@
 				443E66B71FF39AA800BE8420 /* page1.png in Resources */,
 				443E66B31FF39AA800BE8420 /* Icon2.png in Resources */,
 				443E66B11FF39AA800BE8420 /* Avatar.png in Resources */,
+				44E5F65E2028710B00B6A306 /* btn_star_evaluation_normal.png in Resources */,
 				443E66B01FF39AA800BE8420 /* ear2.png in Resources */,
 				443E66B91FF39AA800BE8420 /* page2.png in Resources */,
 			);
@@ -682,15 +712,19 @@
 				441C71811FDFA95D00D0A39B /* GeneralFactory.swift in Sources */,
 				445447891FDE49C500F4EDF7 /* MoreViewController.swift in Sources */,
 				443E4E641FECEF0B009A8EF7 /* BookTitleView.swift in Sources */,
+				44E5F651202839FA00B6A306 /* PushSelectTitleViewController.swift in Sources */,
 				4454477A1FDE1F4500F4EDF7 /* config.swift in Sources */,
 				445447491FDE172900F4EDF7 /* AppDelegate.swift in Sources */,
 				445447871FDE49BC00F4EDF7 /* CircleViewController.swift in Sources */,
+				44E5F65720283A4000B6A306 /* PushSelectDescriptionViewController.swift in Sources */,
 				445447831FDE43CB00F4EDF7 /* SearchViewController.swift in Sources */,
+				44E5F65D2028710B00B6A306 /* LDXScore.m in Sources */,
 				445447851FDE43D700F4EDF7 /* PushViewController.swift in Sources */,
 				4400A80F2017596600FB6A88 /* VPImageCropperViewController.m in Sources */,
 				44D49D342010A08900CA5061 /* PhotoPickerViewController.swift in Sources */,
 				441C717E1FDF864900D0A39B /* PushNewBookViewController.swift in Sources */,
 				445447811FDE43AF00F4EDF7 /* RankViewController.swift in Sources */,
+				44E5F65520283A2600B6A306 /* PushSelectTypeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

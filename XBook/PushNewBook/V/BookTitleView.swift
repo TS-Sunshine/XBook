@@ -23,7 +23,8 @@ class BookTitleView: UIView  {
     /// 作者名
     var bookEditor:JVFloatLabeledTextField?
     
-    var delegate : BookTitleDelegate?
+    
+    weak var delegate:BookTitleDelegate?
     
     
     override init(frame:CGRect){

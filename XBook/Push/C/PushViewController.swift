@@ -44,7 +44,7 @@ class PushViewController: UIViewController {
     
     @objc func pushNewBook(){
         let vc = PushNewBookViewController()
-        GeneralFactory.addTitleWithTitle(target: vc, leftTitle: "11", rightTitle: "22")
+        GeneralFactory.addTitleWithTitle(target: vc)
         self.present(vc, animated: true) {
         }
     }
