@@ -15,6 +15,7 @@ class GeneralFactory: NSObject {
         leftBtn.titleLabel?.text = "关闭"
         leftBtn .setTitleColor(UIColor.black, for: .normal)
         leftBtn.setTitle(leftTitle, for: .normal)
+        leftBtn.tag = 1001
         target.view.addSubview(leftBtn)
         
         
@@ -22,6 +23,7 @@ class GeneralFactory: NSObject {
         rightBtn.titleLabel?.text = "确认"
         rightBtn .setTitleColor(UIColor.black, for: .normal)
         rightBtn.setTitle(rightTitle, for: .normal)
+        rightBtn.tag = 1002
         target.view.addSubview(rightBtn)
         
         

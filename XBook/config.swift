@@ -14,4 +14,7 @@ let SCREEN_HEIGHT = UIScreen.main.bounds.height
 let MAIN_RED = UIColor.init(red: 23/255, green: 23/255, blue: 233/255, alpha: 1.0)
 
 
+func RGB(r: Float, g: Float, b: Float) ->UIColor {
+    return UIColor(red: CGFloat(r / 255.0), green: CGFloat(g / 255.0), blue: CGFloat(b / 255.0), alpha: 1.0)
+}
 

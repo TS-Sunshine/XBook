@@ -22,6 +22,9 @@ class PushNewBookViewController: UIViewController {
     
     var score:LDXScore?
     
+    var type = ""
+    
+    var detailType = ""
     //是否实现星星
     var showScore = false
     
@@ -142,6 +145,10 @@ extension PushNewBookViewController:UITableViewDelegate, UITableViewDataSource {
             cell.accessoryType = .disclosureIndicator
         }
         cell.textLabel?.text = self.titleArray[indexPath.row]
+        var row = indexPath.row
+        if self.showScore && row > 1 {
+            row = row - 1
+        }
         switch indexPath.row {
         case 0:
             cell.detailTextLabel?.text = self.bookTitle
@@ -159,7 +166,11 @@ extension PushNewBookViewController:UITableViewDelegate, UITableViewDataSource {
     //
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.tableView?.deselectRow(at: indexPath, animated: true)
-        switch indexPath.row {
+        var row = indexPath.row
+        if self.showScore && row > 1 {
+            row = row - 1
+        }
+        switch row {
         case 0:
             tableViewSelectTitle()
             break
@@ -196,8 +207,8 @@ extension PushNewBookViewController:UITableViewDelegate, UITableViewDataSource {
         let tempIndexPath = [NSIndexPath(row: 2, section: 0)]
         
         if self.showScore {
-            self.titleArray.insert("", at: 2)
-            self.tableView?.insertRows(at: tempIndexPath as [IndexPath], with: .right)
+            self.titleArray.remove(at: 2)
+            self.tableView?.deleteRows(at: tempIndexPath as [IndexPath], with: .right)
             self.showScore = false
         }else {
             self.titleArray.insert("", at: 2)
@@ -212,6 +223,17 @@ extension PushNewBookViewController:UITableViewDelegate, UITableViewDataSource {
     @objc func tableViewSelectType() {
         let vc =  PushSelectTypeViewController()
         GeneralFactory.addTitleWithTitle(target: vc)
+        vc.type = self.type
+        vc.detailType = self.detailType
+        vc.callBack = ({(type:String, detailType:String) -> Void in
+            self.type = type
+            self.detailType = detailType
+            self.tableView?.reloadData()
+        })
+        let leftBtn = vc.view.viewWithTag(1001) as? UIButton
+        let rigthBtn = vc.view.viewWithTag(1002) as? UIButton
+        leftBtn?.setTitleColor(RGB(r: 38, g: 82, b: 67), for: .normal)
+        rigthBtn?.setTitleColor(RGB(r: 38, g: 82, b: 67), for: .normal)
         self.present(vc, animated: true, completion: nil)
     }
     /// 选择书评
