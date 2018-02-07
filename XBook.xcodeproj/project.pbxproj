@@ -56,6 +56,7 @@
 		4497624E202963D9007B9C00 /* social-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4497623C202963D9007B9C00 /* social-icon@2x.png */; };
 		4497625420296FFF007B9C00 /* IGLDropDownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 4497625020296FFF007B9C00 /* IGLDropDownMenu.m */; };
 		4497625520296FFF007B9C00 /* IGLDropDownItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4497625320296FFF007B9C00 /* IGLDropDownItem.m */; };
+		44C4354F202AFE6B0066D5F1 /* XKeyBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 44C4354E202AFE6B0066D5F1 /* XKeyBoard.m */; };
 		44D49D342010A08900CA5061 /* PhotoPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D49D332010A08900CA5061 /* PhotoPickerViewController.swift */; };
 		44E5F651202839FA00B6A306 /* PushSelectTitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E5F650202839FA00B6A306 /* PushSelectTitleViewController.swift */; };
 		44E5F65520283A2600B6A306 /* PushSelectTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E5F65420283A2600B6A306 /* PushSelectTypeViewController.swift */; };
@@ -147,6 +148,8 @@
 		4497625120296FFF007B9C00 /* IGLDropDownItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGLDropDownItem.h; sourceTree = "<group>"; };
 		4497625220296FFF007B9C00 /* IGLDropDownMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGLDropDownMenu.h; sourceTree = "<group>"; };
 		4497625320296FFF007B9C00 /* IGLDropDownItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGLDropDownItem.m; sourceTree = "<group>"; };
+		44C4354D202AFE6B0066D5F1 /* XKeyBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XKeyBoard.h; sourceTree = "<group>"; };
+		44C4354E202AFE6B0066D5F1 /* XKeyBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XKeyBoard.m; sourceTree = "<group>"; };
 		44D49D332010A08900CA5061 /* PhotoPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoPickerViewController.swift; sourceTree = "<group>"; };
 		44E5F650202839FA00B6A306 /* PushSelectTitleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushSelectTitleViewController.swift; sourceTree = "<group>"; };
 		44E5F65420283A2600B6A306 /* PushSelectTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushSelectTypeViewController.swift; sourceTree = "<group>"; };
@@ -208,6 +211,7 @@
 		4400A80B2017594500FB6A88 /* ThirdKit */ = {
 			isa = PBXGroup;
 			children = (
+				44C4354C202AFE6B0066D5F1 /* XKeyBoard */,
 				4497624F20296FFF007B9C00 /* IGLDropDownMenu */,
 				4497622A202963D9007B9C00 /* AKSegmentedControl */,
 				44E5F6582028710B00B6A306 /* LDXScore */,
@@ -458,6 +462,15 @@
 				4497625320296FFF007B9C00 /* IGLDropDownItem.m */,
 			);
 			path = IGLDropDownMenu;
+			sourceTree = "<group>";
+		};
+		44C4354C202AFE6B0066D5F1 /* XKeyBoard */ = {
+			isa = PBXGroup;
+			children = (
+				44C4354D202AFE6B0066D5F1 /* XKeyBoard.h */,
+				44C4354E202AFE6B0066D5F1 /* XKeyBoard.m */,
+			);
+			path = XKeyBoard;
 			sourceTree = "<group>";
 		};
 		44E5F6582028710B00B6A306 /* LDXScore */ = {
@@ -827,6 +840,7 @@
 				445447851FDE43D700F4EDF7 /* PushViewController.swift in Sources */,
 				4400A80F2017596600FB6A88 /* VPImageCropperViewController.m in Sources */,
 				44D49D342010A08900CA5061 /* PhotoPickerViewController.swift in Sources */,
+				44C4354F202AFE6B0066D5F1 /* XKeyBoard.m in Sources */,
 				441C717E1FDF864900D0A39B /* PushNewBookViewController.swift in Sources */,
 				445447811FDE43AF00F4EDF7 /* RankViewController.swift in Sources */,
 				44E5F65520283A2600B6A306 /* PushSelectTypeViewController.swift in Sources */,

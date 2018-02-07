@@ -25,6 +25,8 @@ class PushNewBookViewController: UIViewController {
     var type = ""
     
     var detailType = ""
+    
+    var bookDescription = ""
     //是否实现星星
     var showScore = false
     
@@ -153,6 +155,9 @@ extension PushNewBookViewController:UITableViewDelegate, UITableViewDataSource {
         case 0:
             cell.detailTextLabel?.text = self.bookTitle
             break
+        case 2:
+            cell.detailTextLabel?.text = self.type + "->" + self.detailType
+            break
         default:
             break
         }
@@ -239,6 +244,9 @@ extension PushNewBookViewController:UITableViewDelegate, UITableViewDataSource {
     /// 选择书评
     @objc func tableViewSelectDescription() {
         let vc = PushSelectDescriptionViewController()
+//        vc.callBack = ({(description:String) -> Void in
+//            self.bookDescription = description
+//        })
         GeneralFactory.addTitleWithTitle(target: vc)
         self.present(vc, animated: true, completion: nil)
     }
