@@ -20,6 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         //初始化LeanCloud
         LeanCloud.initialize(applicationID: "Q4IbsfymfGEkQQtIqgLShp9t-gzGzoHsz", applicationKey: "nsGDsavphwL5jkcShUMuzGPy")
+        
         let mainTabBar = UITabBarController()
         //创建主窗口
         self.window = UIWindow(frame:UIScreen.main.bounds)

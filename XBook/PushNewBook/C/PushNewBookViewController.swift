@@ -72,7 +72,8 @@ class PushNewBookViewController: UIViewController {
         }
     }
     @objc func sure() {
-        print("确认")
+        let vc = LoginViewController()
+        self.present(vc, animated: true, completion: nil)
     }
  
     
@@ -119,7 +120,7 @@ extension PushNewBookViewController:VPImageCropperDelegate {
     ///
     /// - Parameter cropperViewController:
     func imageCropperDidCancel(_ cropperViewController: VPImageCropperViewController!) {
-        
+
         self.dismiss(animated: true, completion: nil)
     }
     
@@ -158,6 +159,13 @@ extension PushNewBookViewController:UITableViewDelegate, UITableViewDataSource {
         case 2:
             cell.detailTextLabel?.text = self.type + "->" + self.detailType
             break
+        case 4:
+            //accessoryType cell的样式
+            cell.accessoryType = .none
+            let commentView = UITextView(frame: CGRect(x: 4, y: 4, width: SCREEN_WIDTH - 8, height: 80))
+            commentView.text = self.bookDescription
+            cell.contentView.addSubview(commentView)
+            break
         default:
             break
         }
@@ -168,6 +176,16 @@ extension PushNewBookViewController:UITableViewDelegate, UITableViewDataSource {
         return cell
         
     }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if showScore && indexPath.row > 5 {
+            return 88
+        }else if !self.showScore && indexPath.row > 4 {
+            return 88
+        }else {
+            return 44
+        }
+    }
+    
     //
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.tableView?.deselectRow(at: indexPath, animated: true)
@@ -244,10 +262,18 @@ extension PushNewBookViewController:UITableViewDelegate, UITableViewDataSource {
     /// 选择书评
     @objc func tableViewSelectDescription() {
         let vc = PushSelectDescriptionViewController()
-//        vc.callBack = ({(description:String) -> Void in
-//            self.bookDescription = description
-//        })
         GeneralFactory.addTitleWithTitle(target: vc)
+        vc.callBack = ({(description:String) -> Void in
+            self.bookDescription = description
+            if self.titleArray.last == "" {
+                self.titleArray.removeLast()
+            }
+            if description != "" {
+                self.titleArray.append("")
+            }
+            self.tableView?.reloadData()
+        })
+        
         self.present(vc, animated: true, completion: nil)
     }
     

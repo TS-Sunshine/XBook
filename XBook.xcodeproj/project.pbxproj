@@ -26,6 +26,8 @@
 		443E66B71FF39AA800BE8420 /* page1.png in Resources */ = {isa = PBXBuildFile; fileRef = 443E66AA1FF39AA800BE8420 /* page1.png */; };
 		443E66B81FF39AA800BE8420 /* page3.png in Resources */ = {isa = PBXBuildFile; fileRef = 443E66AB1FF39AA800BE8420 /* page3.png */; };
 		443E66B91FF39AA800BE8420 /* page2.png in Resources */ = {isa = PBXBuildFile; fileRef = 443E66AC1FF39AA800BE8420 /* page2.png */; };
+		444C67E620347FB000E8E7C7 /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 444C67E420347FB000E8E7C7 /* ProgressHUD.bundle */; };
+		444C67E720347FB000E8E7C7 /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 444C67E520347FB000E8E7C7 /* ProgressHUD.m */; };
 		445447491FDE172900F4EDF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445447481FDE172900F4EDF7 /* AppDelegate.swift */; };
 		445447501FDE172900F4EDF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4454474F1FDE172900F4EDF7 /* Assets.xcassets */; };
 		445447531FDE172900F4EDF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 445447511FDE172900F4EDF7 /* LaunchScreen.storyboard */; };
@@ -57,6 +59,12 @@
 		4497625420296FFF007B9C00 /* IGLDropDownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 4497625020296FFF007B9C00 /* IGLDropDownMenu.m */; };
 		4497625520296FFF007B9C00 /* IGLDropDownItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4497625320296FFF007B9C00 /* IGLDropDownItem.m */; };
 		44C4354F202AFE6B0066D5F1 /* XKeyBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 44C4354E202AFE6B0066D5F1 /* XKeyBoard.m */; };
+		44C43552202D8E2A0066D5F1 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C43551202D8E2A0066D5F1 /* LoginView.swift */; };
+		44C43559202D93270066D5F1 /* login.png in Resources */ = {isa = PBXBuildFile; fileRef = 44C43558202D93270066D5F1 /* login.png */; };
+		44C4355B202D9C550066D5F1 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C4355A202D9C550066D5F1 /* RegisterView.swift */; };
+		44C4355D202DA0950066D5F1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C4355C202DA0950066D5F1 /* LoginViewController.swift */; };
+		44C4355F202DA69F0066D5F1 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C4355E202DA69F0066D5F1 /* RegisterViewController.swift */; };
+		44C43560202DB5830066D5F1 /* LeanCloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44C43561202DB5830066D5F1 /* LeanCloud.framework */; };
 		44D49D342010A08900CA5061 /* PhotoPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D49D332010A08900CA5061 /* PhotoPickerViewController.swift */; };
 		44E5F651202839FA00B6A306 /* PushSelectTitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E5F650202839FA00B6A306 /* PushSelectTitleViewController.swift */; };
 		44E5F65520283A2600B6A306 /* PushSelectTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E5F65420283A2600B6A306 /* PushSelectTypeViewController.swift */; };
@@ -109,6 +117,9 @@
 		443E66AA1FF39AA800BE8420 /* page1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = page1.png; sourceTree = "<group>"; };
 		443E66AB1FF39AA800BE8420 /* page3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = page3.png; sourceTree = "<group>"; };
 		443E66AC1FF39AA800BE8420 /* page2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = page2.png; sourceTree = "<group>"; };
+		444C67E320347FB000E8E7C7 /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
+		444C67E420347FB000E8E7C7 /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ProgressHUD.bundle; sourceTree = "<group>"; };
+		444C67E520347FB000E8E7C7 /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
 		445447451FDE172900F4EDF7 /* XBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		445447481FDE172900F4EDF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4454474F1FDE172900F4EDF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -150,6 +161,12 @@
 		4497625320296FFF007B9C00 /* IGLDropDownItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGLDropDownItem.m; sourceTree = "<group>"; };
 		44C4354D202AFE6B0066D5F1 /* XKeyBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XKeyBoard.h; sourceTree = "<group>"; };
 		44C4354E202AFE6B0066D5F1 /* XKeyBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XKeyBoard.m; sourceTree = "<group>"; };
+		44C43551202D8E2A0066D5F1 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		44C43558202D93270066D5F1 /* login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login.png; sourceTree = "<group>"; };
+		44C4355A202D9C550066D5F1 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		44C4355C202DA0950066D5F1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		44C4355E202DA69F0066D5F1 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		44C43561202DB5830066D5F1 /* LeanCloud.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LeanCloud.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		44D49D332010A08900CA5061 /* PhotoPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoPickerViewController.swift; sourceTree = "<group>"; };
 		44E5F650202839FA00B6A306 /* PushSelectTitleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushSelectTitleViewController.swift; sourceTree = "<group>"; };
 		44E5F65420283A2600B6A306 /* PushSelectTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushSelectTypeViewController.swift; sourceTree = "<group>"; };
@@ -171,6 +188,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44C43560202DB5830066D5F1 /* LeanCloud.framework in Frameworks */,
 				443E4E611FECEEEB009A8EF7 /* JVFloatLabeledTextField.framework in Frameworks */,
 				20B9C6A100C7B43D7C17DB6D /* Pods_XBook.framework in Frameworks */,
 			);
@@ -211,6 +229,7 @@
 		4400A80B2017594500FB6A88 /* ThirdKit */ = {
 			isa = PBXGroup;
 			children = (
+				444C67E220347FB000E8E7C7 /* ProgressHUD */,
 				44C4354C202AFE6B0066D5F1 /* XKeyBoard */,
 				4497624F20296FFF007B9C00 /* IGLDropDownMenu */,
 				4497622A202963D9007B9C00 /* AKSegmentedControl */,
@@ -277,6 +296,7 @@
 		443E669F1FF39AA800BE8420 /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				44C43558202D93270066D5F1 /* login.png */,
 				443E66A01FF39AA800BE8420 /* red_point.png */,
 				443E66A11FF39AA800BE8420 /* blank.png */,
 				443E66A21FF39AA800BE8420 /* ear1.png */,
@@ -294,9 +314,21 @@
 			path = Image;
 			sourceTree = "<group>";
 		};
+		444C67E220347FB000E8E7C7 /* ProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				444C67E320347FB000E8E7C7 /* ProgressHUD.h */,
+				444C67E420347FB000E8E7C7 /* ProgressHUD.bundle */,
+				444C67E520347FB000E8E7C7 /* ProgressHUD.m */,
+			);
+			path = ProgressHUD;
+			sourceTree = "<group>";
+		};
 		4454473C1FDE172900F4EDF7 = {
 			isa = PBXGroup;
 			children = (
+				443E669F1FF39AA800BE8420 /* Image */,
+				4400A80B2017594500FB6A88 /* ThirdKit */,
 				445447471FDE172900F4EDF7 /* XBook */,
 				4454475C1FDE172A00F4EDF7 /* XBookTests */,
 				445447671FDE172A00F4EDF7 /* XBookUITests */,
@@ -319,8 +351,7 @@
 		445447471FDE172900F4EDF7 /* XBook */ = {
 			isa = PBXGroup;
 			children = (
-				4400A80B2017594500FB6A88 /* ThirdKit */,
-				443E669F1FF39AA800BE8420 /* Image */,
+				44C43550202D8DDA0066D5F1 /* Login */,
 				441C71821FDFAC1800D0A39B /* PushNewBook */,
 				441C717F1FDFA93500D0A39B /* Factory */,
 				4454477F1FDE438100F4EDF7 /* More */,
@@ -473,6 +504,41 @@
 			path = XKeyBoard;
 			sourceTree = "<group>";
 		};
+		44C43550202D8DDA0066D5F1 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				44C43557202D92CC0066D5F1 /* C */,
+				44C43556202D92BD0066D5F1 /* V */,
+				44C43555202D92A30066D5F1 /* M */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		44C43555202D92A30066D5F1 /* M */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = M;
+			sourceTree = "<group>";
+		};
+		44C43556202D92BD0066D5F1 /* V */ = {
+			isa = PBXGroup;
+			children = (
+				44C43551202D8E2A0066D5F1 /* LoginView.swift */,
+				44C4355A202D9C550066D5F1 /* RegisterView.swift */,
+			);
+			path = V;
+			sourceTree = "<group>";
+		};
+		44C43557202D92CC0066D5F1 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				44C4355C202DA0950066D5F1 /* LoginViewController.swift */,
+				44C4355E202DA69F0066D5F1 /* RegisterViewController.swift */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
 		44E5F6582028710B00B6A306 /* LDXScore */ = {
 			isa = PBXGroup;
 			children = (
@@ -487,6 +553,7 @@
 		9187DD67292D6A6CFB7697A7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				44C43561202DB5830066D5F1 /* LeanCloud.framework */,
 				443E4E621FECEEEB009A8EF7 /* JVFloatLabeledTextField.framework */,
 				BB8173439442DFC7BEF49658 /* Pods_XBook.framework */,
 				52F08C5657026FB9F0F668D1 /* Pods_XBookTests.framework */,
@@ -629,11 +696,13 @@
 				443E66B81FF39AA800BE8420 /* page3.png in Resources */,
 				44976246202963D9007B9C00 /* segmented-bg-pressed-left@2x.png in Resources */,
 				445447501FDE172900F4EDF7 /* Assets.xcassets in Resources */,
+				44C43559202D93270066D5F1 /* login.png in Resources */,
 				4497624E202963D9007B9C00 /* social-icon@2x.png in Resources */,
 				4497624D202963D9007B9C00 /* segmented-separator@2x.png in Resources */,
 				443E66AD1FF39AA800BE8420 /* red_point.png in Resources */,
 				443E66B51FF39AA800BE8420 /* Cover.png in Resources */,
 				44976240202963D9007B9C00 /* segmented-bg-pressed-center.png in Resources */,
+				444C67E620347FB000E8E7C7 /* ProgressHUD.bundle in Resources */,
 				443E66B71FF39AA800BE8420 /* page1.png in Resources */,
 				4497624B202963D9007B9C00 /* settings-icon@2x.png in Resources */,
 				44976248202963D9007B9C00 /* settings-icon.png in Resources */,
@@ -827,7 +896,10 @@
 			files = (
 				4497625520296FFF007B9C00 /* IGLDropDownItem.m in Sources */,
 				441C71811FDFA95D00D0A39B /* GeneralFactory.swift in Sources */,
+				444C67E720347FB000E8E7C7 /* ProgressHUD.m in Sources */,
 				445447891FDE49C500F4EDF7 /* MoreViewController.swift in Sources */,
+				44C4355F202DA69F0066D5F1 /* RegisterViewController.swift in Sources */,
+				44C4355D202DA0950066D5F1 /* LoginViewController.swift in Sources */,
 				443E4E641FECEF0B009A8EF7 /* BookTitleView.swift in Sources */,
 				44E5F651202839FA00B6A306 /* PushSelectTitleViewController.swift in Sources */,
 				4454477A1FDE1F4500F4EDF7 /* config.swift in Sources */,
@@ -836,10 +908,12 @@
 				445447871FDE49BC00F4EDF7 /* CircleViewController.swift in Sources */,
 				44E5F65720283A4000B6A306 /* PushSelectDescriptionViewController.swift in Sources */,
 				445447831FDE43CB00F4EDF7 /* SearchViewController.swift in Sources */,
+				44C4355B202D9C550066D5F1 /* RegisterView.swift in Sources */,
 				44E5F65D2028710B00B6A306 /* LDXScore.m in Sources */,
 				445447851FDE43D700F4EDF7 /* PushViewController.swift in Sources */,
 				4400A80F2017596600FB6A88 /* VPImageCropperViewController.m in Sources */,
 				44D49D342010A08900CA5061 /* PhotoPickerViewController.swift in Sources */,
+				44C43552202D8E2A0066D5F1 /* LoginView.swift in Sources */,
 				44C4354F202AFE6B0066D5F1 /* XKeyBoard.m in Sources */,
 				441C717E1FDF864900D0A39B /* PushNewBookViewController.swift in Sources */,
 				445447811FDE43AF00F4EDF7 /* RankViewController.swift in Sources */,

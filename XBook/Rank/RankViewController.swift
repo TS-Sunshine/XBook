@@ -7,11 +7,21 @@
 //
 
 import UIKit
+import LeanCloud
+
 
 class RankViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.view.backgroundColor = UIColor.white
+        
+        if LCUser.current == nil {
+            let loginVC = LoginViewController()
+            self.present(loginVC, animated: true, completion: nil)
+        }
+        
         
         // Do any additional setup after loading the view.
     }

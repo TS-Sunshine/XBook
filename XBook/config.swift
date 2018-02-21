@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+
 let SCREEN_WIDTH = UIScreen.main.bounds.width
 let SCREEN_HEIGHT = UIScreen.main.bounds.height
 let MAIN_RED = UIColor.init(red: 23/255, green: 23/255, blue: 233/255, alpha: 1.0)
