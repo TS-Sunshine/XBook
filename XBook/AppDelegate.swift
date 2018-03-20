@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import LeanCloud
+import AVOSCloud
 import SnapKit
 
 @UIApplicationMain
@@ -19,7 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         //初始化LeanCloud
-        LeanCloud.initialize(applicationID: "Q4IbsfymfGEkQQtIqgLShp9t-gzGzoHsz", applicationKey: "nsGDsavphwL5jkcShUMuzGPy")
+//        LeanCloud.initialize(applicationID: "jww4GxVHxznsqVmDwwv0s85s-gzGzoHsz", applicationKey: "t5YTTKjMpbDxybCuEjU8PKet")
+
+        AVOSCloud.setApplicationId("jww4GxVHxznsqVmDwwv0s85s-gzGzoHsz", clientKey: "t5YTTKjMpbDxybCuEjU8PKet")
         
         let mainTabBar = UITabBarController()
         //创建主窗口
@@ -60,6 +62,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
 
+    
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
@@ -81,6 +84,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+    
 
 
 }

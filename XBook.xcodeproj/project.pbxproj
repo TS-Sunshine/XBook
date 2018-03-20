@@ -11,7 +11,7 @@
 		4400A80F2017596600FB6A88 /* VPImageCropperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4400A80D2017596600FB6A88 /* VPImageCropperViewController.m */; };
 		441C717E1FDF864900D0A39B /* PushNewBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441C717D1FDF864900D0A39B /* PushNewBookViewController.swift */; };
 		441C71811FDFA95D00D0A39B /* GeneralFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441C71801FDFA95D00D0A39B /* GeneralFactory.swift */; };
-		443E4E611FECEEEB009A8EF7 /* JVFloatLabeledTextField.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 443E4E621FECEEEB009A8EF7 /* JVFloatLabeledTextField.framework */; };
+		4431A7722061148D00855C71 /* AVOSCloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4431A7712061148D00855C71 /* AVOSCloud.framework */; };
 		443E4E641FECEF0B009A8EF7 /* BookTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443E4E631FECEF0B009A8EF7 /* BookTitleView.swift */; };
 		443E66AD1FF39AA800BE8420 /* red_point.png in Resources */ = {isa = PBXBuildFile; fileRef = 443E66A01FF39AA800BE8420 /* red_point.png */; };
 		443E66AE1FF39AA800BE8420 /* blank.png in Resources */ = {isa = PBXBuildFile; fileRef = 443E66A11FF39AA800BE8420 /* blank.png */; };
@@ -39,6 +39,7 @@
 		445447851FDE43D700F4EDF7 /* PushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445447841FDE43D700F4EDF7 /* PushViewController.swift */; };
 		445447871FDE49BC00F4EDF7 /* CircleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445447861FDE49BC00F4EDF7 /* CircleViewController.swift */; };
 		445447891FDE49C500F4EDF7 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445447881FDE49C500F4EDF7 /* MoreViewController.swift */; };
+		4464C8D220521F8900E173E9 /* PushBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4464C8D120521F8900E173E9 /* PushBook.swift */; };
 		4497623E202963D9007B9C00 /* AKSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4497622B202963D9007B9C00 /* AKSegmentedControl.m */; };
 		4497623F202963D9007B9C00 /* segmented-separator.png in Resources */ = {isa = PBXBuildFile; fileRef = 4497622D202963D9007B9C00 /* segmented-separator.png */; };
 		44976240202963D9007B9C00 /* segmented-bg-pressed-center.png in Resources */ = {isa = PBXBuildFile; fileRef = 4497622E202963D9007B9C00 /* segmented-bg-pressed-center.png */; };
@@ -64,7 +65,6 @@
 		44C4355B202D9C550066D5F1 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C4355A202D9C550066D5F1 /* RegisterView.swift */; };
 		44C4355D202DA0950066D5F1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C4355C202DA0950066D5F1 /* LoginViewController.swift */; };
 		44C4355F202DA69F0066D5F1 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C4355E202DA69F0066D5F1 /* RegisterViewController.swift */; };
-		44C43560202DB5830066D5F1 /* LeanCloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44C43561202DB5830066D5F1 /* LeanCloud.framework */; };
 		44D49D342010A08900CA5061 /* PhotoPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D49D332010A08900CA5061 /* PhotoPickerViewController.swift */; };
 		44E5F651202839FA00B6A306 /* PushSelectTitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E5F650202839FA00B6A306 /* PushSelectTitleViewController.swift */; };
 		44E5F65520283A2600B6A306 /* PushSelectTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E5F65420283A2600B6A306 /* PushSelectTypeViewController.swift */; };
@@ -72,8 +72,6 @@
 		44E5F65D2028710B00B6A306 /* LDXScore.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E5F6592028710B00B6A306 /* LDXScore.m */; };
 		44E5F65E2028710B00B6A306 /* btn_star_evaluation_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 44E5F65B2028710B00B6A306 /* btn_star_evaluation_normal.png */; };
 		44E5F65F2028710B00B6A306 /* btn_star_evaluation_press.png in Resources */ = {isa = PBXBuildFile; fileRef = 44E5F65C2028710B00B6A306 /* btn_star_evaluation_press.png */; };
-		E5F6428D0E56C2DE17DAAD52 /* Pods_XBookTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52F08C5657026FB9F0F668D1 /* Pods_XBookTests.framework */; };
-		EED50C49634DA2EF2C75B891 /* Pods_XBookUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A585F5632A05B26A2D48FB19 /* Pods_XBookUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,7 +100,7 @@
 		441435882011BE3800AC9D40 /* XBook-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XBook-Bridging-Header.h"; sourceTree = "<group>"; };
 		441C717D1FDF864900D0A39B /* PushNewBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNewBookViewController.swift; sourceTree = "<group>"; };
 		441C71801FDFA95D00D0A39B /* GeneralFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralFactory.swift; sourceTree = "<group>"; };
-		443E4E621FECEEEB009A8EF7 /* JVFloatLabeledTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = JVFloatLabeledTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4431A7712061148D00855C71 /* AVOSCloud.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVOSCloud.framework; path = "../Downloads/XBook-master/XBook/AVOSCloud.framework"; sourceTree = "<group>"; };
 		443E4E631FECEF0B009A8EF7 /* BookTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTitleView.swift; sourceTree = "<group>"; };
 		443E66A01FF39AA800BE8420 /* red_point.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red_point.png; sourceTree = "<group>"; };
 		443E66A11FF39AA800BE8420 /* blank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blank.png; sourceTree = "<group>"; };
@@ -137,6 +135,8 @@
 		445447841FDE43D700F4EDF7 /* PushViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushViewController.swift; sourceTree = "<group>"; };
 		445447861FDE49BC00F4EDF7 /* CircleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleViewController.swift; sourceTree = "<group>"; };
 		445447881FDE49C500F4EDF7 /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
+		4464C8D120521F8900E173E9 /* PushBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushBook.swift; sourceTree = "<group>"; };
+		4464C8D32052203C00E173E9 /* XBook.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XBook.pch; sourceTree = "<group>"; };
 		4497622B202963D9007B9C00 /* AKSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKSegmentedControl.m; sourceTree = "<group>"; };
 		4497622D202963D9007B9C00 /* segmented-separator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "segmented-separator.png"; sourceTree = "<group>"; };
 		4497622E202963D9007B9C00 /* segmented-bg-pressed-center.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "segmented-bg-pressed-center.png"; sourceTree = "<group>"; };
@@ -166,7 +166,6 @@
 		44C4355A202D9C550066D5F1 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		44C4355C202DA0950066D5F1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		44C4355E202DA69F0066D5F1 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
-		44C43561202DB5830066D5F1 /* LeanCloud.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LeanCloud.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		44D49D332010A08900CA5061 /* PhotoPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoPickerViewController.swift; sourceTree = "<group>"; };
 		44E5F650202839FA00B6A306 /* PushSelectTitleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushSelectTitleViewController.swift; sourceTree = "<group>"; };
 		44E5F65420283A2600B6A306 /* PushSelectTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushSelectTypeViewController.swift; sourceTree = "<group>"; };
@@ -175,10 +174,8 @@
 		44E5F65A2028710B00B6A306 /* LDXScore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDXScore.h; sourceTree = "<group>"; };
 		44E5F65B2028710B00B6A306 /* btn_star_evaluation_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_star_evaluation_normal.png; sourceTree = "<group>"; };
 		44E5F65C2028710B00B6A306 /* btn_star_evaluation_press.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_star_evaluation_press.png; sourceTree = "<group>"; };
-		52F08C5657026FB9F0F668D1 /* Pods_XBookTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XBookTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		66B4FDC194A3E29395F95D2C /* Pods-XBookUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XBookUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XBookUITests/Pods-XBookUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8A8BFFB2532741976399421E /* Pods-XBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XBook.release.xcconfig"; path = "Pods/Target Support Files/Pods-XBook/Pods-XBook.release.xcconfig"; sourceTree = "<group>"; };
-		A585F5632A05B26A2D48FB19 /* Pods_XBookUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XBookUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB8173439442DFC7BEF49658 /* Pods_XBook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XBook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE8C17FCA5C8A1ECE38999EA /* Pods-XBookTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XBookTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-XBookTests/Pods-XBookTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -188,9 +185,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44C43560202DB5830066D5F1 /* LeanCloud.framework in Frameworks */,
-				443E4E611FECEEEB009A8EF7 /* JVFloatLabeledTextField.framework in Frameworks */,
 				20B9C6A100C7B43D7C17DB6D /* Pods_XBook.framework in Frameworks */,
+				4431A7722061148D00855C71 /* AVOSCloud.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,7 +194,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5F6428D0E56C2DE17DAAD52 /* Pods_XBookTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,7 +201,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EED50C49634DA2EF2C75B891 /* Pods_XBookUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,18 +253,11 @@
 		441C71821FDFAC1800D0A39B /* PushNewBook */ = {
 			isa = PBXGroup;
 			children = (
+				4464C8D020521F7400E173E9 /* M */,
 				443E669E1FF3969100BE8420 /* C */,
 				443E669D1FF3968B00BE8420 /* V */,
-				443E669C1FF3967E00BE8420 /* M */,
 			);
 			path = PushNewBook;
-			sourceTree = "<group>";
-		};
-		443E669C1FF3967E00BE8420 /* M */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = M;
 			sourceTree = "<group>";
 		};
 		443E669D1FF3968B00BE8420 /* V */ = {
@@ -361,6 +348,7 @@
 				4454477B1FDE433A00F4EDF7 /* Rank */,
 				445447481FDE172900F4EDF7 /* AppDelegate.swift */,
 				445447791FDE1F4500F4EDF7 /* config.swift */,
+				4464C8D32052203C00E173E9 /* XBook.pch */,
 				4454474F1FDE172900F4EDF7 /* Assets.xcassets */,
 				445447541FDE172900F4EDF7 /* Info.plist */,
 				445447511FDE172900F4EDF7 /* LaunchScreen.storyboard */,
@@ -449,6 +437,14 @@
 				445447841FDE43D700F4EDF7 /* PushViewController.swift */,
 			);
 			path = C;
+			sourceTree = "<group>";
+		};
+		4464C8D020521F7400E173E9 /* M */ = {
+			isa = PBXGroup;
+			children = (
+				4464C8D120521F8900E173E9 /* PushBook.swift */,
+			);
+			path = M;
 			sourceTree = "<group>";
 		};
 		4497622A202963D9007B9C00 /* AKSegmentedControl */ = {
@@ -553,11 +549,8 @@
 		9187DD67292D6A6CFB7697A7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				44C43561202DB5830066D5F1 /* LeanCloud.framework */,
-				443E4E621FECEEEB009A8EF7 /* JVFloatLabeledTextField.framework */,
+				4431A7712061148D00855C71 /* AVOSCloud.framework */,
 				BB8173439442DFC7BEF49658 /* Pods_XBook.framework */,
-				52F08C5657026FB9F0F668D1 /* Pods_XBookTests.framework */,
-				A585F5632A05B26A2D48FB19 /* Pods_XBookUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -792,16 +785,14 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-XBook/Pods-XBook-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AVOSCloud/AVOSCloud.framework",
 				"${BUILT_PRODUCTS_DIR}/JVFloatLabeledTextField/JVFloatLabeledTextField.framework",
-				"${BUILT_PRODUCTS_DIR}/LeanCloud/LeanCloud.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AVOSCloud.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JVFloatLabeledTextField.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LeanCloud.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -912,6 +903,7 @@
 				44E5F65D2028710B00B6A306 /* LDXScore.m in Sources */,
 				445447851FDE43D700F4EDF7 /* PushViewController.swift in Sources */,
 				4400A80F2017596600FB6A88 /* VPImageCropperViewController.m in Sources */,
+				4464C8D220521F8900E173E9 /* PushBook.swift in Sources */,
 				44D49D342010A08900CA5061 /* PhotoPickerViewController.swift in Sources */,
 				44C43552202D8E2A0066D5F1 /* LoginView.swift in Sources */,
 				44C4354F202AFE6B0066D5F1 /* XKeyBoard.m in Sources */,
@@ -1078,12 +1070,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4NSXL77JL4;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/XBook/XBook.pch";
 				INFOPLIST_FILE = XBook/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tsbdj.com.XBook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "XBook/XBook-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
@@ -1098,12 +1094,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4NSXL77JL4;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/XBook/XBook.pch";
 				INFOPLIST_FILE = XBook/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tsbdj.com.XBook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "XBook/XBook-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

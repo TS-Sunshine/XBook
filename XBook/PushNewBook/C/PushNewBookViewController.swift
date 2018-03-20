@@ -71,9 +71,19 @@ class PushNewBookViewController: UIViewController {
             
         }
     }
+    
+    /// 发布书籍
     @objc func sure() {
-        let vc = LoginViewController()
-        self.present(vc, animated: true, completion: nil)
+        let dict = [
+            "BookName" : (self.bookTitleView?.bookName?.text)!,
+            "BoolEditor" : (self.bookTitleView?.bookEditor?.text)!,
+            "BookCover" : (self.bookTitleView?.bookCover?.currentImage)!,
+            "title" : self.bookTitle,
+            "score" : String(describing: self.score?.show_star),
+            "type" : self.type,
+            "detailType" : self.detailType,
+            "description" : self.bookDescription
+            ] as [String : Any] as [String : Any]
     }
  
     

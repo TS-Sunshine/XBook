@@ -6,9 +6,10 @@ target 'XBook' do
   use_frameworks!
 
   # Pods for XBook
-	pod 'LeanCloud'
+	
 	pod 'JVFloatLabeledTextField'
 	pod 'SnapKit'
+	pod 'AVOSCloud'
 
 
   target 'XBookTests' do

@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import LeanCloud
+import AVOSCloud
 
 class LoginViewController: UIViewController {
     
@@ -39,21 +39,26 @@ class LoginViewController: UIViewController {
     }
     
     @objc func loginAction() {
-        var result = LCUser.logIn(username: (self.loginView.accountNumberTextField?.text)!, password: (self.loginView.passwordTextField?.text)!)
-        
-        if result.isSuccess {
-            ProgressHUD.showSuccess("登录成功")
-            self.dismiss(animated: true, completion: nil)
-        }else if result.error?.code == 210 {
-            ProgressHUD.showError("用户名或密码错误")
-        }else if result.error?.code == 211 {
-            ProgressHUD.showError("不存在改用户")
-        }else if result.error?.code == 216 {
-            ProgressHUD.showError("未验证邮箱")
-        }else if result.error?.code == 1 {
-            ProgressHUD.showError("操作频繁")
-        }else {
-            ProgressHUD.showError("登录失败")
+        AVUser.logInWithUsername(inBackground: (self.loginView.accountNumberTextField?.text)! , password: (self.loginView.passwordTextField?.text)!) { (user, error) in
+            if error == nil {
+                self.dismiss(animated: true, completion: {
+                    let savePassword = UserDefaults.standard
+                    savePassword.set((self.loginView.passwordTextField?.text)!, forKey: "password")
+                })
+            }else{
+                let e = error! as NSError
+                if e.code == 210{
+                    ProgressHUD.showError("用户名或密码错误")
+                }else if e.code == 211{
+                    ProgressHUD.showError("不存在该用户")
+                }else if e.code == 216{
+                    ProgressHUD.showError("未验证邮箱")
+                }else if e.code == 1{
+                    ProgressHUD.showError("操作频繁")
+                }else{
+                    ProgressHUD.showError("登录失败")
+                }
+            }
         }
     }
 }
