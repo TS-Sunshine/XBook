@@ -24,7 +24,7 @@ class PushSelectDescriptionViewController: UIViewController {
         
         self.descriptionTextView = JVFloatLabeledTextView(frame: CGRect(x: 8, y: 58, width: SCREEN_WIDTH - 16, height: SCREEN_HEIGHT - 58 - 8))
         self.view.addSubview(self.descriptionTextView!)
-        self.descriptionTextView?.placeholder = "666666666666666666666666"
+        self.descriptionTextView?.placeholder = "请输入书评！"
         self.descriptionTextView?.becomeFirstResponder()
         
 //        XKeyBoard.registerHide(self)

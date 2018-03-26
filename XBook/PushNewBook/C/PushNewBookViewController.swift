@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVOSCloud
 
 class PushNewBookViewController: UIViewController {
     
@@ -54,6 +55,8 @@ class PushNewBookViewController: UIViewController {
         self.score?.highlightImg = UIImage(named: "btn_star_evaluation_press")
         self.score?.show_star = 5
         self.score?.max_star = 5
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(self.pushBookNotification(notification:)), name:NSNotification.Name(rawValue: "pushBookNotification") , object: nil)
     }
     
     override func didReceiveMemoryWarning() {
@@ -61,8 +64,26 @@ class PushNewBookViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    deinit {
+        print("PushNewBookViewController realse")
+        NotificationCenter.default.removeObserver(self)
+    }
     
-    
+    /// 上传
+    ///
+    /// - Parameter notification: 
+    @objc func pushBookNotification(notification : Notification){
+        let dict = notification.userInfo
+        if String(describing: dict!["success"]!) == "true" {
+            ProgressHUD.showSuccess("上传成功")
+            self.dismiss(animated: true, completion: {
+                
+            })
+        }else {
+            ProgressHUD.showError("上传成功")
+        }
+       
+    }
     
     
     /// 关闭页面
@@ -84,8 +105,12 @@ class PushNewBookViewController: UIViewController {
             "detailType" : self.detailType,
             "description" : self.bookDescription
             ] as [String : Any] as [String : Any]
+        
+        let object = AVObject(className: "Book")
+        PushBook.pushBookInBackground(dict: dict as NSDictionary, object: object)
     }
  
+   
     
     
 }

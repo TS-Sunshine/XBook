@@ -62,7 +62,7 @@ class LoginView: UIView {
     }
     
     override func layoutSubviews() {
-        let LogoImageViewFrame = CGRect(x: 20, y: 8, width: 200, height: 200)
+        let LogoImageViewFrame = CGRect(x: 60, y: 8, width: 200, height: 200)
         self.LogoImageView?.frame = LogoImageViewFrame
         
         let accountNumberTextFieldFrame = CGRect(x: 20, y: 230, width: 280, height: 30)
@@ -71,10 +71,10 @@ class LoginView: UIView {
         let passwordTextFieldFrame = CGRect(x: 20, y: 270, width: 280, height: 30)
         self.passwordTextField!.frame = passwordTextFieldFrame
         
-        let loginButtonFrame = CGRect(x: 20, y: 310, width: 280, height: 30)
+        let loginButtonFrame = CGRect(x: 100, y: 310, width: 280, height: 30)
         self.loginButton?.frame = loginButtonFrame
         
-        let registerButtonFrame = CGRect(x: 40, y: 250, width: 140, height: 30)
+        let registerButtonFrame = CGRect(x: 70, y: 310, width: 140, height: 30)
         self.registerButton?.frame = registerButtonFrame
         
         
