@@ -31,6 +31,11 @@ class PushNewBookViewController: UIViewController {
     //是否实现星星
     var showScore = false
     
+    //编辑
+    var BookObject:AVObject?
+    
+    var fixType:String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -57,6 +62,26 @@ class PushNewBookViewController: UIViewController {
         self.score?.max_star = 5
         
         NotificationCenter.default.addObserver(self, selector: #selector(self.pushBookNotification(notification:)), name:NSNotification.Name(rawValue: "pushBookNotification") , object: nil)
+    }
+    
+    func fixBook(){
+        if self.fixType == "fix" {
+            self.bookTitleView?.bookName?.text = self.BookObject?["BookName"] as? String
+            self.bookTitleView?.bookEditor?.text = self.BookObject?["BookEditor"] as? String
+            let coverFile = self.BookObject?["cover"] as? AVFile
+            coverFile?.getDataInBackground({ (data, error) in
+                self.bookTitleView?.bookCover?.setImage(UIImage(data:data!), for: .normal)
+            })
+            
+            self.bookTitle = (self.BookObject?["title"] as? String)!
+            self.type = self.BookObject?["type"] as! String
+            self.detailType = (self.BookObject?["detailType"] as? String)!
+            self.bookDescription = (self.BookObject?["descrption"] as? String)!
+//            self.score?.show_star = (Int)((self.BookObject!["score"] as? String)!)!
+            if self.bookDescription != ""{
+                self.titleArray.append("")
+            }
+        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -106,8 +131,12 @@ class PushNewBookViewController: UIViewController {
             "description" : self.bookDescription
             ] as [String : Any] as [String : Any]
         
-        let object = AVObject(className: "Book")
-        PushBook.pushBookInBackground(dict: dict as NSDictionary, object: object)
+        if self.fixType == "fix" {
+            PushBook.pushBookInBackground(dict: dict as NSDictionary , object: self.BookObject! )
+        }else {
+            let object = AVObject(className: "Book")
+            PushBook.pushBookInBackground(dict: dict as NSDictionary, object: object)
+        }
     }
  
    

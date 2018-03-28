@@ -64,6 +64,14 @@
 		443E66B91FF39AA800BE8420 /* page2.png in Resources */ = {isa = PBXBuildFile; fileRef = 443E66AC1FF39AA800BE8420 /* page2.png */; };
 		444C67E620347FB000E8E7C7 /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 444C67E420347FB000E8E7C7 /* ProgressHUD.bundle */; };
 		444C67E720347FB000E8E7C7 /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 444C67E520347FB000E8E7C7 /* ProgressHUD.m */; };
+		444C85FF206A833F00FDFA85 /* HZIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 444C85F7206A833E00FDFA85 /* HZIndicatorView.m */; };
+		444C8600206A833F00FDFA85 /* whiteplaceholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 444C85F8206A833E00FDFA85 /* whiteplaceholder.png */; };
+		444C8601206A833F00FDFA85 /* HZPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 444C85FA206A833E00FDFA85 /* HZPhotoBrowser.m */; };
+		444C8602206A833F00FDFA85 /* HZPhotoBrowserView.m in Sources */ = {isa = PBXBuildFile; fileRef = 444C85FD206A833E00FDFA85 /* HZPhotoBrowserView.m */; };
+		444C8608206A8C0400FDFA85 /* JRSegmentControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 444C8604206A8C0400FDFA85 /* JRSegmentControl.m */; };
+		444C8609206A8C0400FDFA85 /* JRSegmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 444C8605206A8C0400FDFA85 /* JRSegmentViewController.m */; };
+		444C860B206A8D2F00FDFA85 /* RankTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444C860A206A8D2F00FDFA85 /* RankTableViewCell.swift */; };
+		444C860D206A909A00FDFA85 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444C860C206A909A00FDFA85 /* SearchTableViewCell.swift */; };
 		445447491FDE172900F4EDF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445447481FDE172900F4EDF7 /* AppDelegate.swift */; };
 		445447501FDE172900F4EDF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4454474F1FDE172900F4EDF7 /* Assets.xcassets */; };
 		445447531FDE172900F4EDF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 445447511FDE172900F4EDF7 /* LaunchScreen.storyboard */; };
@@ -76,6 +84,20 @@
 		445447871FDE49BC00F4EDF7 /* CircleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445447861FDE49BC00F4EDF7 /* CircleViewController.swift */; };
 		445447891FDE49C500F4EDF7 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445447881FDE49C500F4EDF7 /* MoreViewController.swift */; };
 		4464C8D220521F8900E173E9 /* PushBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4464C8D120521F8900E173E9 /* PushBook.swift */; };
+		446EF36D206A25FC00BD28E7 /* BookDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446EF36C206A25FC00BD28E7 /* BookDetailViewController.swift */; };
+		446EF36F206A296300BD28E7 /* BookDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446EF36E206A296300BD28E7 /* BookDetailView.swift */; };
+		446EF371206A393500BD28E7 /* BookTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446EF370206A393500BD28E7 /* BookTabBar.swift */; };
+		446EF378206A3FA700BD28E7 /* InputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 446EF373206A3FA700BD28E7 /* InputView.xib */; };
+		446EF379206A3FA700BD28E7 /* InputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 446EF374206A3FA700BD28E7 /* InputView.m */; };
+		446EF37A206A3FA700BD28E7 /* UIViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 446EF375206A3FA700BD28E7 /* UIViewExt.m */; };
+		446EF37C206A3FF400BD28E7 /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446EF37B206A3FF400BD28E7 /* CommentViewController.swift */; };
+		446EF37E206A44C000BD28E7 /* DiscussCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446EF37D206A44C000BD28E7 /* DiscussCell.swift */; };
+		446EF38C206A750200BD28E7 /* SWCellScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 446EF381206A750100BD28E7 /* SWCellScrollView.m */; };
+		446EF38D206A750200BD28E7 /* SWUtilityButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 446EF384206A750100BD28E7 /* SWUtilityButtonView.m */; };
+		446EF38E206A750200BD28E7 /* SWUtilityButtonTapGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 446EF386206A750100BD28E7 /* SWUtilityButtonTapGestureRecognizer.m */; };
+		446EF38F206A750200BD28E7 /* SWLongPressGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 446EF387206A750100BD28E7 /* SWLongPressGestureRecognizer.m */; };
+		446EF390206A750200BD28E7 /* NSMutableArray+SWUtilityButtons.m in Sources */ = {isa = PBXBuildFile; fileRef = 446EF388206A750100BD28E7 /* NSMutableArray+SWUtilityButtons.m */; };
+		446EF391206A750200BD28E7 /* SWTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 446EF38B206A750100BD28E7 /* SWTableViewCell.m */; };
 		4497623E202963D9007B9C00 /* AKSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4497622B202963D9007B9C00 /* AKSegmentedControl.m */; };
 		4497623F202963D9007B9C00 /* segmented-separator.png in Resources */ = {isa = PBXBuildFile; fileRef = 4497622D202963D9007B9C00 /* segmented-separator.png */; };
 		44976240202963D9007B9C00 /* segmented-bg-pressed-center.png in Resources */ = {isa = PBXBuildFile; fileRef = 4497622E202963D9007B9C00 /* segmented-bg-pressed-center.png */; };
@@ -102,6 +124,9 @@
 		44C4355D202DA0950066D5F1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C4355C202DA0950066D5F1 /* LoginViewController.swift */; };
 		44C4355F202DA69F0066D5F1 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C4355E202DA69F0066D5F1 /* RegisterViewController.swift */; };
 		44D49D342010A08900CA5061 /* PhotoPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D49D332010A08900CA5061 /* PhotoPickerViewController.swift */; };
+		44DDABA4206A95D60007B7EB /* helpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DDABA1206A95D60007B7EB /* helpViewController.swift */; };
+		44DDABA5206A95D60007B7EB /* userViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DDABA2206A95D60007B7EB /* userViewController.swift */; };
+		44DDABA6206A95D60007B7EB /* weViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DDABA3206A95D60007B7EB /* weViewController.swift */; };
 		44E5F651202839FA00B6A306 /* PushSelectTitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E5F650202839FA00B6A306 /* PushSelectTitleViewController.swift */; };
 		44E5F65520283A2600B6A306 /* PushSelectTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E5F65420283A2600B6A306 /* PushSelectTypeViewController.swift */; };
 		44E5F65720283A4000B6A306 /* PushSelectDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E5F65620283A4000B6A306 /* PushSelectDescriptionViewController.swift */; };
@@ -226,6 +251,20 @@
 		444C67E320347FB000E8E7C7 /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
 		444C67E420347FB000E8E7C7 /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ProgressHUD.bundle; sourceTree = "<group>"; };
 		444C67E520347FB000E8E7C7 /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
+		444C85F7206A833E00FDFA85 /* HZIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZIndicatorView.m; sourceTree = "<group>"; };
+		444C85F8206A833E00FDFA85 /* whiteplaceholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiteplaceholder.png; sourceTree = "<group>"; };
+		444C85F9206A833E00FDFA85 /* HZPhotoBrowserConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZPhotoBrowserConfig.h; sourceTree = "<group>"; };
+		444C85FA206A833E00FDFA85 /* HZPhotoBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZPhotoBrowser.m; sourceTree = "<group>"; };
+		444C85FB206A833E00FDFA85 /* HZPhotoBrowserView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZPhotoBrowserView.h; sourceTree = "<group>"; };
+		444C85FC206A833E00FDFA85 /* HZIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZIndicatorView.h; sourceTree = "<group>"; };
+		444C85FD206A833E00FDFA85 /* HZPhotoBrowserView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZPhotoBrowserView.m; sourceTree = "<group>"; };
+		444C85FE206A833E00FDFA85 /* HZPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZPhotoBrowser.h; sourceTree = "<group>"; };
+		444C8604206A8C0400FDFA85 /* JRSegmentControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRSegmentControl.m; sourceTree = "<group>"; };
+		444C8605206A8C0400FDFA85 /* JRSegmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRSegmentViewController.m; sourceTree = "<group>"; };
+		444C8606206A8C0400FDFA85 /* JRSegmentControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRSegmentControl.h; sourceTree = "<group>"; };
+		444C8607206A8C0400FDFA85 /* JRSegmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRSegmentViewController.h; sourceTree = "<group>"; };
+		444C860A206A8D2F00FDFA85 /* RankTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankTableViewCell.swift; sourceTree = "<group>"; };
+		444C860C206A909A00FDFA85 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 		445447451FDE172900F4EDF7 /* XBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		445447481FDE172900F4EDF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4454474F1FDE172900F4EDF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -245,6 +284,28 @@
 		445447881FDE49C500F4EDF7 /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
 		4464C8D120521F8900E173E9 /* PushBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushBook.swift; sourceTree = "<group>"; };
 		4464C8D32052203C00E173E9 /* XBook.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XBook.pch; sourceTree = "<group>"; };
+		446EF36C206A25FC00BD28E7 /* BookDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailViewController.swift; sourceTree = "<group>"; };
+		446EF36E206A296300BD28E7 /* BookDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailView.swift; sourceTree = "<group>"; };
+		446EF370206A393500BD28E7 /* BookTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTabBar.swift; sourceTree = "<group>"; };
+		446EF373206A3FA700BD28E7 /* InputView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InputView.xib; sourceTree = "<group>"; };
+		446EF374206A3FA700BD28E7 /* InputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputView.m; sourceTree = "<group>"; };
+		446EF375206A3FA700BD28E7 /* UIViewExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewExt.m; sourceTree = "<group>"; };
+		446EF376206A3FA700BD28E7 /* InputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputView.h; sourceTree = "<group>"; };
+		446EF377206A3FA700BD28E7 /* UIViewExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewExt.h; sourceTree = "<group>"; };
+		446EF37B206A3FF400BD28E7 /* CommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
+		446EF37D206A44C000BD28E7 /* DiscussCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscussCell.swift; sourceTree = "<group>"; };
+		446EF380206A750100BD28E7 /* SWUtilityButtonTapGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWUtilityButtonTapGestureRecognizer.h; sourceTree = "<group>"; };
+		446EF381206A750100BD28E7 /* SWCellScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWCellScrollView.m; sourceTree = "<group>"; };
+		446EF382206A750100BD28E7 /* NSMutableArray+SWUtilityButtons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+SWUtilityButtons.h"; sourceTree = "<group>"; };
+		446EF383206A750100BD28E7 /* SWLongPressGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWLongPressGestureRecognizer.h; sourceTree = "<group>"; };
+		446EF384206A750100BD28E7 /* SWUtilityButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWUtilityButtonView.m; sourceTree = "<group>"; };
+		446EF385206A750100BD28E7 /* SWTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWTableViewCell.h; sourceTree = "<group>"; };
+		446EF386206A750100BD28E7 /* SWUtilityButtonTapGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWUtilityButtonTapGestureRecognizer.m; sourceTree = "<group>"; };
+		446EF387206A750100BD28E7 /* SWLongPressGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWLongPressGestureRecognizer.m; sourceTree = "<group>"; };
+		446EF388206A750100BD28E7 /* NSMutableArray+SWUtilityButtons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+SWUtilityButtons.m"; sourceTree = "<group>"; };
+		446EF389206A750100BD28E7 /* SWCellScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWCellScrollView.h; sourceTree = "<group>"; };
+		446EF38A206A750100BD28E7 /* SWUtilityButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWUtilityButtonView.h; sourceTree = "<group>"; };
+		446EF38B206A750100BD28E7 /* SWTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWTableViewCell.m; sourceTree = "<group>"; };
 		4497622B202963D9007B9C00 /* AKSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKSegmentedControl.m; sourceTree = "<group>"; };
 		4497622D202963D9007B9C00 /* segmented-separator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "segmented-separator.png"; sourceTree = "<group>"; };
 		4497622E202963D9007B9C00 /* segmented-bg-pressed-center.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "segmented-bg-pressed-center.png"; sourceTree = "<group>"; };
@@ -275,6 +336,9 @@
 		44C4355C202DA0950066D5F1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		44C4355E202DA69F0066D5F1 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		44D49D332010A08900CA5061 /* PhotoPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoPickerViewController.swift; sourceTree = "<group>"; };
+		44DDABA1206A95D60007B7EB /* helpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = helpViewController.swift; path = "../../../Downloads/XBook-master/XBook/helpViewController.swift"; sourceTree = "<group>"; };
+		44DDABA2206A95D60007B7EB /* userViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = userViewController.swift; path = "../../../Downloads/XBook-master/XBook/userViewController.swift"; sourceTree = "<group>"; };
+		44DDABA3206A95D60007B7EB /* weViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = weViewController.swift; path = "../../../Downloads/XBook-master/XBook/weViewController.swift"; sourceTree = "<group>"; };
 		44E5F650202839FA00B6A306 /* PushSelectTitleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushSelectTitleViewController.swift; sourceTree = "<group>"; };
 		44E5F65420283A2600B6A306 /* PushSelectTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushSelectTypeViewController.swift; sourceTree = "<group>"; };
 		44E5F65620283A4000B6A306 /* PushSelectDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushSelectDescriptionViewController.swift; sourceTree = "<group>"; };
@@ -331,6 +395,10 @@
 		4400A80B2017594500FB6A88 /* ThirdKit */ = {
 			isa = PBXGroup;
 			children = (
+				444C8603206A8C0400FDFA85 /* JRSegmentControl */,
+				444C85F6206A833E00FDFA85 /* HZPhotoBrowser */,
+				446EF37F206A750100BD28E7 /* LeftSwipeCell */,
+				446EF372206A3FA700BD28E7 /* InputView */,
 				4431A8472069334600855C71 /* SDWebImage */,
 				4431A801206921A700855C71 /* MJRefresh */,
 				444C67E220347FB000E8E7C7 /* ProgressHUD */,
@@ -564,6 +632,34 @@
 			path = ProgressHUD;
 			sourceTree = "<group>";
 		};
+		444C85F6206A833E00FDFA85 /* HZPhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				444C85F7206A833E00FDFA85 /* HZIndicatorView.m */,
+				444C85F8206A833E00FDFA85 /* whiteplaceholder.png */,
+				444C85F9206A833E00FDFA85 /* HZPhotoBrowserConfig.h */,
+				444C85FA206A833E00FDFA85 /* HZPhotoBrowser.m */,
+				444C85FB206A833E00FDFA85 /* HZPhotoBrowserView.h */,
+				444C85FC206A833E00FDFA85 /* HZIndicatorView.h */,
+				444C85FD206A833E00FDFA85 /* HZPhotoBrowserView.m */,
+				444C85FE206A833E00FDFA85 /* HZPhotoBrowser.h */,
+			);
+			name = HZPhotoBrowser;
+			path = "../../Downloads/XBook-master/HZPhotoBrowser";
+			sourceTree = "<group>";
+		};
+		444C8603206A8C0400FDFA85 /* JRSegmentControl */ = {
+			isa = PBXGroup;
+			children = (
+				444C8604206A8C0400FDFA85 /* JRSegmentControl.m */,
+				444C8605206A8C0400FDFA85 /* JRSegmentViewController.m */,
+				444C8606206A8C0400FDFA85 /* JRSegmentControl.h */,
+				444C8607206A8C0400FDFA85 /* JRSegmentViewController.h */,
+			);
+			name = JRSegmentControl;
+			path = "../../Downloads/XBook-master/JRSegmentControl";
+			sourceTree = "<group>";
+		};
 		4454473C1FDE172900F4EDF7 = {
 			isa = PBXGroup;
 			children = (
@@ -632,6 +728,7 @@
 			isa = PBXGroup;
 			children = (
 				445447801FDE43AF00F4EDF7 /* RankViewController.swift */,
+				444C860A206A8D2F00FDFA85 /* RankTableViewCell.swift */,
 			);
 			path = Rank;
 			sourceTree = "<group>";
@@ -640,6 +737,7 @@
 			isa = PBXGroup;
 			children = (
 				445447821FDE43CB00F4EDF7 /* SearchViewController.swift */,
+				444C860C206A909A00FDFA85 /* SearchTableViewCell.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -664,6 +762,9 @@
 		4454477F1FDE438100F4EDF7 /* More */ = {
 			isa = PBXGroup;
 			children = (
+				44DDABA1206A95D60007B7EB /* helpViewController.swift */,
+				44DDABA2206A95D60007B7EB /* userViewController.swift */,
+				44DDABA3206A95D60007B7EB /* weViewController.swift */,
 				445447881FDE49C500F4EDF7 /* MoreViewController.swift */,
 			);
 			path = More;
@@ -683,6 +784,75 @@
 				4464C8D120521F8900E173E9 /* PushBook.swift */,
 			);
 			path = M;
+			sourceTree = "<group>";
+		};
+		446EF368206A258800BD28E7 /* BookDetailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				446EF36B206A25D200BD28E7 /* C */,
+				446EF36A206A25CD00BD28E7 /* V */,
+				446EF369206A25B600BD28E7 /* M */,
+			);
+			path = BookDetailViewController;
+			sourceTree = "<group>";
+		};
+		446EF369206A25B600BD28E7 /* M */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = M;
+			sourceTree = "<group>";
+		};
+		446EF36A206A25CD00BD28E7 /* V */ = {
+			isa = PBXGroup;
+			children = (
+				446EF36E206A296300BD28E7 /* BookDetailView.swift */,
+				446EF370206A393500BD28E7 /* BookTabBar.swift */,
+				446EF37D206A44C000BD28E7 /* DiscussCell.swift */,
+			);
+			path = V;
+			sourceTree = "<group>";
+		};
+		446EF36B206A25D200BD28E7 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				446EF36C206A25FC00BD28E7 /* BookDetailViewController.swift */,
+				446EF37B206A3FF400BD28E7 /* CommentViewController.swift */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		446EF372206A3FA700BD28E7 /* InputView */ = {
+			isa = PBXGroup;
+			children = (
+				446EF373206A3FA700BD28E7 /* InputView.xib */,
+				446EF374206A3FA700BD28E7 /* InputView.m */,
+				446EF375206A3FA700BD28E7 /* UIViewExt.m */,
+				446EF376206A3FA700BD28E7 /* InputView.h */,
+				446EF377206A3FA700BD28E7 /* UIViewExt.h */,
+			);
+			name = InputView;
+			path = "../../Downloads/XBook-master/InputView";
+			sourceTree = "<group>";
+		};
+		446EF37F206A750100BD28E7 /* LeftSwipeCell */ = {
+			isa = PBXGroup;
+			children = (
+				446EF380206A750100BD28E7 /* SWUtilityButtonTapGestureRecognizer.h */,
+				446EF381206A750100BD28E7 /* SWCellScrollView.m */,
+				446EF382206A750100BD28E7 /* NSMutableArray+SWUtilityButtons.h */,
+				446EF383206A750100BD28E7 /* SWLongPressGestureRecognizer.h */,
+				446EF384206A750100BD28E7 /* SWUtilityButtonView.m */,
+				446EF385206A750100BD28E7 /* SWTableViewCell.h */,
+				446EF386206A750100BD28E7 /* SWUtilityButtonTapGestureRecognizer.m */,
+				446EF387206A750100BD28E7 /* SWLongPressGestureRecognizer.m */,
+				446EF388206A750100BD28E7 /* NSMutableArray+SWUtilityButtons.m */,
+				446EF389206A750100BD28E7 /* SWCellScrollView.h */,
+				446EF38A206A750100BD28E7 /* SWUtilityButtonView.h */,
+				446EF38B206A750100BD28E7 /* SWTableViewCell.m */,
+			);
+			name = LeftSwipeCell;
+			path = "../../Downloads/XBook-master/LeftSwipeCell";
 			sourceTree = "<group>";
 		};
 		4497622A202963D9007B9C00 /* AKSegmentedControl */ = {
@@ -741,6 +911,7 @@
 		44C43550202D8DDA0066D5F1 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				446EF368206A258800BD28E7 /* BookDetailViewController */,
 				44C43557202D92CC0066D5F1 /* C */,
 				44C43556202D92BD0066D5F1 /* V */,
 				44C43555202D92A30066D5F1 /* M */,
@@ -917,6 +1088,7 @@
 				443E66AF1FF39AA800BE8420 /* ear1.png in Resources */,
 				445447531FDE172900F4EDF7 /* LaunchScreen.storyboard in Resources */,
 				443E66B41FF39AA800BE8420 /* Blank2.png in Resources */,
+				444C8600206A833F00FDFA85 /* whiteplaceholder.png in Resources */,
 				44976242202963D9007B9C00 /* segmented-bg-pressed-center@2x.png in Resources */,
 				443E66B21FF39AA800BE8420 /* logn.png in Resources */,
 				44976247202963D9007B9C00 /* star-icon.png in Resources */,
@@ -940,6 +1112,7 @@
 				44976248202963D9007B9C00 /* settings-icon.png in Resources */,
 				443E66B31FF39AA800BE8420 /* Icon2.png in Resources */,
 				443E66B11FF39AA800BE8420 /* Avatar.png in Resources */,
+				446EF378206A3FA700BD28E7 /* InputView.xib in Resources */,
 				4497624A202963D9007B9C00 /* segmented-bg.png in Resources */,
 				4497623F202963D9007B9C00 /* segmented-separator.png in Resources */,
 				44E5F65E2028710B00B6A306 /* btn_star_evaluation_normal.png in Resources */,
@@ -1127,54 +1300,77 @@
 				4431A83E206921A700855C71 /* MJRefreshBackFooter.m in Sources */,
 				4497625520296FFF007B9C00 /* IGLDropDownItem.m in Sources */,
 				4431A83A206921A700855C71 /* MJRefreshStateHeader.m in Sources */,
+				444C8608206A8C0400FDFA85 /* JRSegmentControl.m in Sources */,
 				4431A8742069334600855C71 /* SDWebImageDownloaderOperation.m in Sources */,
 				4431A832206921A700855C71 /* UIView+MJExtension.m in Sources */,
 				441C71811FDFA95D00D0A39B /* GeneralFactory.swift in Sources */,
+				446EF36D206A25FC00BD28E7 /* BookDetailViewController.swift in Sources */,
+				446EF379206A3FA700BD28E7 /* InputView.m in Sources */,
+				446EF38E206A750200BD28E7 /* SWUtilityButtonTapGestureRecognizer.m in Sources */,
 				4431A83F206921A700855C71 /* MJRefreshAutoFooter.m in Sources */,
+				446EF37C206A3FF400BD28E7 /* CommentViewController.swift in Sources */,
 				4431A835206921A700855C71 /* MJRefreshBackNormalFooter.m in Sources */,
+				444C8602206A833F00FDFA85 /* HZPhotoBrowserView.m in Sources */,
 				4431A86C2069334600855C71 /* SDWebImageDecoder.m in Sources */,
 				444C67E720347FB000E8E7C7 /* ProgressHUD.m in Sources */,
 				4431A838206921A700855C71 /* MJRefreshAutoNormalFooter.m in Sources */,
 				445447891FDE49C500F4EDF7 /* MoreViewController.swift in Sources */,
+				446EF36F206A296300BD28E7 /* BookDetailView.swift in Sources */,
 				44C4355F202DA69F0066D5F1 /* RegisterViewController.swift in Sources */,
 				4431A8692069334600855C71 /* UIImage+WebP.m in Sources */,
+				444C85FF206A833F00FDFA85 /* HZIndicatorView.m in Sources */,
 				4431A83C206921A700855C71 /* MJRefreshFooter.m in Sources */,
 				4431A82E206921A700855C71 /* UIScrollView+MJRefresh.m in Sources */,
 				44C4355D202DA0950066D5F1 /* LoginViewController.swift in Sources */,
 				4431A8782069334600855C71 /* UIButton+WebCache.m in Sources */,
+				446EF38F206A750200BD28E7 /* SWLongPressGestureRecognizer.m in Sources */,
 				443E4E641FECEF0B009A8EF7 /* BookTitleView.swift in Sources */,
 				4431A83B206921A700855C71 /* MJRefreshGifHeader.m in Sources */,
 				4431A86D2069334600855C71 /* UIImageView+HighlightedWebCache.m in Sources */,
 				4431A833206921A700855C71 /* MJRefreshBackGifFooter.m in Sources */,
 				44E5F651202839FA00B6A306 /* PushSelectTitleViewController.swift in Sources */,
+				446EF391206A750200BD28E7 /* SWTableViewCell.m in Sources */,
 				4454477A1FDE1F4500F4EDF7 /* config.swift in Sources */,
 				4431A83D206921A700855C71 /* MJRefreshHeader.m in Sources */,
 				445447491FDE172900F4EDF7 /* AppDelegate.swift in Sources */,
+				44DDABA6206A95D60007B7EB /* weViewController.swift in Sources */,
 				4497625420296FFF007B9C00 /* IGLDropDownMenu.m in Sources */,
 				4431A8762069334600855C71 /* UIImageView+WebCache.m in Sources */,
 				445447871FDE49BC00F4EDF7 /* CircleViewController.swift in Sources */,
 				4431A86F2069334600855C71 /* UIImage+GIF.m in Sources */,
 				44E5F65720283A4000B6A306 /* PushSelectDescriptionViewController.swift in Sources */,
 				4431A8702069334600855C71 /* UIImage+MultiFormat.m in Sources */,
+				446EF38C206A750200BD28E7 /* SWCellScrollView.m in Sources */,
+				446EF38D206A750200BD28E7 /* SWUtilityButtonView.m in Sources */,
+				446EF371206A393500BD28E7 /* BookTabBar.swift in Sources */,
+				444C8601206A833F00FDFA85 /* HZPhotoBrowser.m in Sources */,
 				4431A839206921A700855C71 /* MJRefreshNormalHeader.m in Sources */,
 				4431A846206929D200855C71 /* PushBookCell.swift in Sources */,
 				4431A8712069334600855C71 /* SDWebImageCompat.m in Sources */,
+				444C860B206A8D2F00FDFA85 /* RankTableViewCell.swift in Sources */,
 				445447831FDE43CB00F4EDF7 /* SearchViewController.swift in Sources */,
 				4431A836206921A700855C71 /* MJRefreshAutoStateFooter.m in Sources */,
 				44C4355B202D9C550066D5F1 /* RegisterView.swift in Sources */,
 				4431A840206921A700855C71 /* MJRefreshComponent.m in Sources */,
+				446EF390206A750200BD28E7 /* NSMutableArray+SWUtilityButtons.m in Sources */,
 				44E5F65D2028710B00B6A306 /* LDXScore.m in Sources */,
 				445447851FDE43D700F4EDF7 /* PushViewController.swift in Sources */,
+				446EF37E206A44C000BD28E7 /* DiscussCell.swift in Sources */,
 				4431A86B2069334600855C71 /* SDWebImageManager.m in Sources */,
+				446EF37A206A3FA700BD28E7 /* UIViewExt.m in Sources */,
 				4431A837206921A700855C71 /* MJRefreshAutoGifFooter.m in Sources */,
 				4400A80F2017596600FB6A88 /* VPImageCropperViewController.m in Sources */,
+				44DDABA5206A95D60007B7EB /* userViewController.swift in Sources */,
 				4431A8722069334600855C71 /* SDWebImagePrefetcher.m in Sources */,
+				444C860D206A909A00FDFA85 /* SearchTableViewCell.swift in Sources */,
 				4464C8D220521F8900E173E9 /* PushBook.swift in Sources */,
 				44D49D342010A08900CA5061 /* PhotoPickerViewController.swift in Sources */,
 				44C43552202D8E2A0066D5F1 /* LoginView.swift in Sources */,
 				44C4354F202AFE6B0066D5F1 /* XKeyBoard.m in Sources */,
 				441C717E1FDF864900D0A39B /* PushNewBookViewController.swift in Sources */,
+				444C8609206A8C0400FDFA85 /* JRSegmentViewController.m in Sources */,
 				4431A82F206921A700855C71 /* MJRefreshConst.m in Sources */,
+				44DDABA4206A95D60007B7EB /* helpViewController.swift in Sources */,
 				445447811FDE43AF00F4EDF7 /* RankViewController.swift in Sources */,
 				4431A86A2069334600855C71 /* MKAnnotationView+WebCache.m in Sources */,
 				4431A8772069334600855C71 /* UIView+WebCacheOperation.m in Sources */,
