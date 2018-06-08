@@ -53,7 +53,7 @@ class MoreViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         qBtn?.addTarget(self, action: #selector(self.quitUser), for: .touchUpInside)
         self.view.addSubview(qBtn!)
         
-        self.navigationController?.navigationBar.barTintColor = UIColor.brown
+        self.navigationController?.navigationBar.barTintColor = MAIN_blue
 //        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColorNSAttributedStringKey.foregroundColor: UIColor.white]
     }
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -104,8 +104,8 @@ class MoreViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     }
     
     @objc func quitUser(){
-        let story = UIStoryboard(name: "Login", bundle: nil)
-        let vc = story.instantiateViewController(withIdentifier: "Login")
+
+        let vc = LoginViewController()
         self.present(vc, animated: true, completion: {
             self.tabBarController?.selectedIndex = 0
             AVUser.logOut()

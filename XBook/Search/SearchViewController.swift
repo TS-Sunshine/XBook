@@ -34,7 +34,7 @@ class SearchViewController: UIViewController,UITableViewDelegate,UITableViewData
         self.navigationController?.navigationBar.barTintColor = UIColor.red
 //        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColorNSAttributedStringKey.foregroundColor: UIColor.white]
         
-        self.navigationController?.navigationBar.barTintColor = UIColor.orange
+        self.navigationController?.navigationBar.barTintColor = MAIN_blue
         self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
     }
     

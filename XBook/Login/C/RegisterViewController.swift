@@ -41,21 +41,7 @@ class RegisterViewController: UIViewController {
         user.password = self.registerView.passwordTextField?.text
         
         user.email = self.registerView.emailTextField?.text
-      /**
-        if user.signUp().isSuccess {
-            ProgressHUD.showSuccess("注册成功,请登录!")
-            self.dismiss(animated: true, completion: nil)
-        }else if user.signUp().error?.code == 125 {
-            ProgressHUD.showError("邮箱不合法")
-        }else if user.signUp().error?.code == 203 {
-            ProgressHUD.showError("该邮箱已注册")
-            
-        }else if user.signUp().error?.code == 202 {
-            ProgressHUD.showError("用户名已存在")
-        }else {
-            ProgressHUD.showError("注册失败 ")
-        }
-    */
+
         user.signUpInBackground { (success, error) in
             if success{
                 ProgressHUD.showSuccess("注册成功，请验证邮箱")

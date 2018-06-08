@@ -35,7 +35,7 @@ class CircleViewController: UIViewController,UITableViewDelegate,UITableViewData
         
         self.tableView?.mj_header = MJRefreshNormalHeader(refreshingTarget: self, refreshingAction: #selector(self.headerRefresh))
         self.tableView?.mj_footer = MJRefreshBackNormalFooter(refreshingTarget: self, refreshingAction: #selector(self.footerRefresh))
-        self.navigationController?.navigationBar.barTintColor = UIColor.purple
+        self.navigationController?.navigationBar.barTintColor = MAIN_blue
         self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
     }
     

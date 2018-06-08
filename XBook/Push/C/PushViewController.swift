@@ -62,7 +62,8 @@ class PushViewController: UIViewController,SWTableViewCellDelegate {
     func setNavigationBar(){
         //创建navigationbar
         navigationView = UIView(frame:CGRect(x:0,y:-20,width:SCREEN_WIDTH,height:64))
-        navigationView?.backgroundColor = UIColor.white
+        navigationView?.backgroundColor = MAIN_blue
+        
         self.navigationController?.navigationBar.addSubview(navigationView!)
         
         //

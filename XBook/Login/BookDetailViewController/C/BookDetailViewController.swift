@@ -91,7 +91,7 @@ class BookDetailViewController: UIViewController,InputViewDelegate,HZPhotoBrowse
         
         let user = self.bookObject!["user"] as? AVUser
         user?.fetchInBackground({ (returnUser, error) in
-            self.BookTitleView?.userName?.text = "编者:" + (returnUser as! AVUser).username!
+//            self.BookTitleView?.userName?.text = "编者:" + (returnUser as! AVUser).username!
         })
         
         let date = self.bookObject?["createdAt"] as! Date

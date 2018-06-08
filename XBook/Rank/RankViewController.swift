@@ -20,13 +20,15 @@ class RankViewController: UIViewController,JRSegmentControlDelegate,UITableViewD
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "排行榜"
+        self.navigationController?.navigationBar.tintColor = UIColor.black
         
         self.view.backgroundColor = UIColor.white
         
+        
         //AVUser.logOut()
         if AVUser.current() == nil  {
-            let story = UIStoryboard(name: "Login", bundle: nil)
-            let loginVC = story.instantiateViewController(withIdentifier: "Login")
+//            let story = UIStoryboard(name: "Login", bundle: nil)
+            let loginVC = LoginViewController()
             self.present(loginVC, animated: true, completion: {
                 
             })
@@ -34,7 +36,7 @@ class RankViewController: UIViewController,JRSegmentControlDelegate,UITableViewD
         
         self.segment = JRSegmentControl(frame: CGRect(x: 0, y: 65, width: 375, height: 20))
         self.segment?.titles = ["评论榜","关注榜","浏览榜"]
-        self.segment?.cornerRadius = 5.0
+        self.segment?.cornerRadius = 1.0
         self.segment?.titleColor = UIColor.white
         self.segment?.indicatorViewColor = UIColor.white
         self.segment?.backgroundColor = UIColor.init(red: 8.0/255, green: 160.0/255, blue: 180.0/255, alpha: 1.0)
@@ -52,7 +54,7 @@ class RankViewController: UIViewController,JRSegmentControlDelegate,UITableViewD
         self.tableView?.mj_footer = MJRefreshBackNormalFooter(refreshingTarget: self, refreshingAction: #selector(self.footerRefresh))
         self.tableView?.mj_header.beginRefreshing()
         
-        self.navigationController?.navigationBar.barTintColor = UIColor.darkGray
+        self.navigationController?.navigationBar.barTintColor = MAIN_blue
         self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
     }
     
